@@ -1,10 +1,10 @@
 # AGENTS.md — 通用 Agent 使用说明
 
-本仓库是一套 **Remotion 口播讲解视频流水线**。它最初按 WorkBuddy Skill 格式打包，但内容不绑定 WorkBuddy：任何能读写文件、执行命令的 Agent（Claude Code / Codex / Cursor 等）都可以按本文件执行，人工也可以照着做。
+本仓库是一套 **Remotion 口播讲解视频流水线**，供 Agent 读取并执行。把本仓库地址交给 Agent，让它先读本文件与 `SKILL.md`，再按流程做视频即可；任何能读写文件、执行命令的 Agent 都适用。
 
 ## 先读什么
 
-1. **`SKILL.md`** —— 主流程：七阶段、两道确认门、画面四条铁律、开头 15 秒规范。它顶部的 YAML frontmatter 只供 WorkBuddy 自动发现，其他 Agent 忽略即可，正文是通用 SOP。
+1. **`SKILL.md`** —— 主流程：七阶段、两道确认门、画面四条铁律、开头 15 秒规范。它顶部的 YAML 元数据供工具自动发现，Agent 读正文即可。
 2. 按任务需要再读 `references/`：
 
 | 需要做什么 | 读哪份 |
@@ -65,6 +65,6 @@
 
 完整结构说明见 `SKILL.md`「工程结构」。
 
-## WorkBuddy 用户
+## 开始工作
 
-把本目录放到 `~/.workbuddy/skills/remotion-video-pipeline`（全局）或 `<项目>/.workbuddy/skills/remotion-video-pipeline`（项目级），即可被自动发现与触发。其他 Agent 不需要这一步。
+收到视频需求后，按上面的「先读什么」加载规范，进入 `SKILL.md` 的七阶段流程。规格用默认值兜底；只在 G1（选配音方式）与 G2（试听确认）停下等用户答复，其余环节不要追问。

@@ -6,7 +6,7 @@ version: 1.7.0
 
 # Remotion 口播讲解视频流水线
 
-> 本文件顶部的 frontmatter 只用于 WorkBuddy 自动发现；正文是一套**通用的 Remotion 视频生产 SOP**。Claude Code / Codex / Cursor 等其他 Agent 或人工使用者，按仓库根目录的 `AGENTS.md` 指引阅读本文件即可执行，忽略 frontmatter。
+> 本文件顶部的 frontmatter 供工具自动发现；正文是一套**通用的 Remotion 视频生产 SOP**。按仓库根目录的 `AGENTS.md` 指引阅读本文件即可执行，忽略 frontmatter。
 
 把「一段要讲的内容」变成一条**能被看完**的横屏讲解动画：字幕是唯一时间基准，画面跟着语义翻页，观点页与解释页交替出现。
 
@@ -161,5 +161,5 @@ cd <已有remotion工程> && cp -al node_modules <新工程路径>/node_modules
 - v1.5.0：新增阶段 4↔5「外部素材检索下载」——代码画不出的画面（真实物件/实拍质感/操作录屏/图标音效）允许 agent 主动上网检索可商用素材，经版权判定与统一画风预处理后落 `public/assets/`，用 `staticFile()` 引用。新增 `references/12-asset-sourcing.md`（渠道优先级、版权红线、画风统一、四条铁律验收）。素材清单随配方卡软交付，**不新增确认门**，G1 / G2 与「只打断两次」不变。
 - v1.5.1：**放宽素材准入**——从「没有它画面就假」改为「有它更好就找」，判据由两栏表改三档（A 必用 / B 优先用默认找 / C 仍用代码）；同时钉死版权/画风/元素三关否决与「素材是元素不是背景」，防止放宽后退成一页一图。门、主音轨、四条铁律均不变。
 - v1.6.0：新增**讲解型动效库**——从「启序AI-豆包口播导演工具箱」三期 40 条动效提示词提炼出 21 个可复用语义动作（开场钩子/文字强调/过程/操作/数据/对比/收尾七类），补上此前特效库偏重「开场装饰」、缺「讲到什么就演什么」的短板。新增 `references/13-motion-library.md`（每个模式含可复制提示词模板 + Remotion 实现 + 真人转译 + 40 条→模式映射）与 `assets/components/Motion.primitives.tsx`（11 个高频动作的代码原语，纯 Remotion API、确定性、delay 走 `at(i)`）。**真人口播 MG 转译到本 skill 能力边界**：真人出镜改声波头像/前景元素遮挡，历史秒数一律重卡 `timeline`，音效压 0.2~0.4 不盖主音轨。与 `10` 分工：`10` 管开场装饰特效，`13` 管正片语义动作，可叠加。G1/G2、只打断两次、四条铁律均不变。
-- v1.7.0：**默认画幅改为横屏 1920×1080 @30fps**（原竖屏 1080×1920 改为用户明确要求时才用）。同步更新 `11` §1 默认值、`05` 横屏安全区、`02` / `scenes.example.json` 模板、`12` 素材尺寸基准与 `10` §10 换算表；`Chrome.tsx` 改为按 `useVideoConfig()` 自动切横/竖屏坐标（横屏采用已实测成片坐标）。G1/G2、只打断两次、四条铁律与动效库均不变。同版补充 `AGENTS.md` / `CLAUDE.md` 通用 Agent 入口与 README 跨 Agent 说明：frontmatter 仅 WorkBuddy 用，正文对 Claude Code / Codex / Cursor 等 Agent 与人工同样适用。
+- v1.7.0：**默认画幅改为横屏 1920×1080 @30fps**（原竖屏 1080×1920 改为用户明确要求时才用）。同步更新 `11` §1 默认值、`05` 横屏安全区、`02` / `scenes.example.json` 模板、`12` 素材尺寸基准与 `10` §10 换算表；`Chrome.tsx` 改为按 `useVideoConfig()` 自动切横/竖屏坐标（横屏采用已实测成片坐标）。G1/G2、只打断两次、四条铁律与动效库均不变。同版补充 `AGENTS.md` 作为唯一通用 Agent 入口：仓库定位为「给 Agent 一个 Git 链接 + 一句需求即可开工」，frontmatter 仅工具自动发现用，正文通用。
 - 官方 Remotion skill（项目脚手架与 API 速查）：`<skill 根目录同级>/remotion-skills/skills/remotion-create`
