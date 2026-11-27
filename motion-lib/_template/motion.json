@@ -1,0 +1,16 @@
+{
+  "slug": "my-effect",
+  "en": "My Effect",
+  "cn": "我的效果",
+  "category": "A · 开场钩子",
+  "source": "custom",
+  "component": "MyEffect",
+  "triggers": ["触发词一", "触发词二"],
+  "duration_frames": [16, 28],
+  "asset": "none",
+  "based_on": "base-slug",
+  "borrows": [],
+  "custom": true,
+  "library_version": "v1.0.0",
+  "created": "2026-01-01"
+}

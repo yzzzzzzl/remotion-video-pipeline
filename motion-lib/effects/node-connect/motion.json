@@ -1,0 +1,19 @@
+{
+  "slug": "node-connect",
+  "en": "Node & Edge Reveal",
+  "cn": "节点连线",
+  "category": "H · 开场装饰",
+  "source": "10 §4",
+  "component": "NodeConnect",
+  "triggers": [
+    "流程",
+    "生态",
+    "兼容性"
+  ],
+  "duration_frames": [
+    24,
+    60
+  ],
+  "asset": "none",
+  "custom": false
+}

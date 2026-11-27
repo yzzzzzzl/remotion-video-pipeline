@@ -1,0 +1,20 @@
+{
+  "slug": "scan-zones",
+  "en": "Scan & Zone Recognition",
+  "cn": "扫描分区识别",
+  "category": "C · 过程演示",
+  "source": "M12",
+  "component": "ScanZones",
+  "triggers": [
+    "扫描",
+    "识别",
+    "提取",
+    "分块处理"
+  ],
+  "duration_frames": [
+    50,
+    80
+  ],
+  "asset": "optional",
+  "custom": false
+}

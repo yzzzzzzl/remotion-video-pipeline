@@ -25,6 +25,7 @@
 - **不无聊的画面**：开头 15 秒帧级快切，正片观点页 ↔ 解释页交替，每页只放关键词。
 - **外部素材规范**：代码画不出的真实物件/场景允许检索可商用素材，含版权判定、统一画风与落地引用规则。
 - **讲解型动效库**：21 个语义动作模式 + 可复用 Remotion 组件原语，做到「讲到什么就演什么」。
+- **Agent 通用动效库 `motion-lib/`**：31 个效果卡（中英文触发词可查）+ 一份自包含 `MotionKit.tsx`，Claude Code / Cursor / Gemini CLI / GitHub Copilot / WorkBuddy 都能直接用，也能脱离本流水线单独用。
 - **质检与渲染**：先静帧检查排版，再抽帧验动效，最后输出 MP4。
 
 ## Agent 从哪里开始
@@ -56,6 +57,12 @@ remotion-video-pipeline/
 ├── README.md                    本说明
 ├── references/                  各阶段详细规范（00~13）
 ├── scripts/                     环境体检、配音、对轴、时间轴生成、抖音流截获
+├── motion-lib/                  Agent 通用动效库（31 个效果，可单独使用）
+│   ├── AGENTS.md                通用入口；INDEX.md 效果索引
+│   ├── MOTION-DIRECTOR.md / MOTION-TECHNIQUE.md / MY-MOTIONS.md
+│   ├── core/MotionKit.tsx       31 个自包含组件的唯一代码源
+│   ├── effects/<slug>/          MOTION.md + motion.json + demo.tsx
+│   └── plugin/ .cursor/ .github/ 各 Agent 的自动发现入口
 └── assets/
     ├── components/              可复用 Remotion 组件：Chrome / ShotEngine / Opening / Motion.primitives
     └── templates/               Video / Root / scenes.json 模板
@@ -63,4 +70,4 @@ remotion-video-pipeline/
 
 ## 版本
 
-当前版本：**v1.7.0**（默认横屏、画幅自适应底座）。完整变更记录见 `SKILL.md` 末尾「参考」章节。
+当前版本：**v1.8.0**（默认横屏、画幅自适应底座、Agent 通用动效库 `motion-lib/`）。完整变更记录见 `SKILL.md` 末尾「参考」章节。

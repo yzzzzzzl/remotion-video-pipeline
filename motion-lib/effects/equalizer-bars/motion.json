@@ -1,0 +1,19 @@
+{
+  "slug": "equalizer-bars",
+  "en": "Equalizer Bars",
+  "cn": "均衡器 / 柱状生长",
+  "category": "H · 开场装饰",
+  "source": "10 §4",
+  "component": "EqualizerBars",
+  "triggers": [
+    "数据",
+    "音频",
+    "增长"
+  ],
+  "duration_frames": [
+    30,
+    120
+  ],
+  "asset": "none",
+  "custom": false
+}

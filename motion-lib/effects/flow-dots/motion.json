@@ -1,0 +1,20 @@
+{
+  "slug": "flow-dots",
+  "en": "Flow Dots & Branch Highlight",
+  "cn": "走线流动 + 支路高亮",
+  "category": "C · 过程演示",
+  "source": "M09",
+  "component": "FlowDots",
+  "triggers": [
+    "数据",
+    "传输",
+    "分流",
+    "并行"
+  ],
+  "duration_frames": [
+    24,
+    40
+  ],
+  "asset": "none",
+  "custom": false
+}

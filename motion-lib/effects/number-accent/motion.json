@@ -1,0 +1,19 @@
+{
+  "slug": "number-accent",
+  "en": "Number Accent Lift",
+  "cn": "数字重音上移",
+  "category": "A · 开场钩子",
+  "source": "M03",
+  "component": "NumberAccent",
+  "triggers": [
+    "8 个",
+    "59.2 万亿",
+    "第 1"
+  ],
+  "duration_frames": [
+    24,
+    36
+  ],
+  "asset": "none",
+  "custom": false
+}

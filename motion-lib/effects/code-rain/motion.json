@@ -1,0 +1,19 @@
+{
+  "slug": "code-rain",
+  "en": "Hex Code Rain",
+  "cn": "代码雨 / 十六进制数据轨",
+  "category": "H · 开场装饰",
+  "source": "10 §4",
+  "component": "CodeRain",
+  "triggers": [
+    "技术",
+    "AI",
+    "工具教程"
+  ],
+  "duration_frames": [
+    30,
+    150
+  ],
+  "asset": "none",
+  "custom": false
+}

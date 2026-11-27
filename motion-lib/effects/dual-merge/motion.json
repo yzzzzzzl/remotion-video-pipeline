@@ -1,0 +1,19 @@
+{
+  "slug": "dual-merge",
+  "en": "Two Inputs Merge",
+  "cn": "双路汇入再展开",
+  "category": "C · 过程演示",
+  "source": "M08",
+  "component": "DualMerge",
+  "triggers": [
+    "主题和文档",
+    "两份输入",
+    "生成"
+  ],
+  "duration_frames": [
+    30,
+    60
+  ],
+  "asset": "optional",
+  "custom": false
+}

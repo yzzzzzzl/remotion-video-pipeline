@@ -1,0 +1,19 @@
+{
+  "slug": "result-first-frame",
+  "en": "Real Result First Frame",
+  "cn": "真实成果首帧",
+  "category": "A · 开场钩子",
+  "source": "M02",
+  "component": "ResultFirstFrame",
+  "triggers": [
+    "一篇长文怎么变成",
+    "这是最终结果",
+    "成品长这样"
+  ],
+  "duration_frames": [
+    30,
+    90
+  ],
+  "asset": "required",
+  "custom": false
+}

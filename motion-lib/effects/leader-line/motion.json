@@ -1,0 +1,19 @@
+{
+  "slug": "leader-line",
+  "en": "Single Leader Line",
+  "cn": "一笔引线",
+  "category": "B · 文字强调",
+  "source": "M06",
+  "component": "LeaderLine",
+  "triggers": [
+    "章节名",
+    "工具名",
+    "看这里"
+  ],
+  "duration_frames": [
+    12,
+    20
+  ],
+  "asset": "none",
+  "custom": false
+}

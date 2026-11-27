@@ -1,5 +1,7 @@
 # 讲解型动效库：口播词触发的语义动作
 
+> **v1.8.0 起，本文件的 21 个语义模式 + `10` §4 的 10 个装饰特效已落成 [`motion-lib/`](../motion-lib/AGENTS.md) 的 31 张效果卡与自包含 `core/MotionKit.tsx`。** 选动作仍可按本文件判定；实现优先查 `motion-lib/INDEX.md` → 对应卡片的 `MOTION.md` → `motion-lib/core/README.md`。本文件保留来源映射与转译规则，长期有效。
+>
 > 阶段 4 分镜选动作、阶段 5 搭画面时查。补的是 `10-first-15s.md` §4 那张表没覆盖的部分——**开场装饰特效**（数字滚动、故障字、代码雨…）由 `10` 管，**正片「讲到什么就演什么」的语义动作**由本文件管。两者不冲突，同一页可叠加：语义动作是骨架，装饰特效是质感。
 >
 > 来源：从「启序AI-豆包口播导演工具箱」三期 40 条动效提示词提炼、转译而成（原片为竖屏真人口播 MG）。**不照搬**：本 skill 能力边界是「图文/图表/界面 mockup 级」（`SKILL.md`「什么时候不用」），真人出镜统一用声波头像 / 用户素材替代，历史成片秒数一律重新按 `timeline.json` 卡点。
@@ -312,6 +314,7 @@
 
 ## 7. 可复用资产
 
-- `assets/components/Motion.primitives.tsx` —— 本文件高频动作的代码实现（逐项点亮、扫描线、走线、打字机、数字滚动、划掉、扫入高亮、分路合流、结果停稳等），纯 Remotion 内置 API，直接拷进 `src/components/` 用。
+- **`motion-lib/core/MotionKit.tsx` —— 首选代码实现**：31 个效果的唯一代码源，纯 Remotion 内置 API、确定性、delay 走 `at(i)`；配套 `motion-lib/INDEX.md`（触发词检索）、`motion-lib/MOTION-DIRECTOR.md`（选动作）、`motion-lib/MOTION-TECHNIQUE.md`（三帧质检）。
+- `assets/components/Motion.primitives.tsx` —— 本文件高频动作的旧版代码实现（v1.6 起），保留兼容旧稿；新工程优先用 MotionKit。
 - `assets/components/Opening.tech.tsx` —— 开场装饰特效的已验证实现（与 `10` 配套）。
 - 两者叠加：先挑 `13` 的语义动作搭骨架，再从 `10` §4 挑 1~2 个装饰特效补运动密度。

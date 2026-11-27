@@ -1,0 +1,19 @@
+{
+  "slug": "sweep-highlight",
+  "en": "Keyword Sweep",
+  "cn": "重点词扫入",
+  "category": "B · 文字强调",
+  "source": "M05",
+  "component": "SweepHighlight",
+  "triggers": [
+    "当句重音词",
+    "关键结论",
+    "这个概念"
+  ],
+  "duration_frames": [
+    10,
+    18
+  ],
+  "asset": "none",
+  "custom": false
+}

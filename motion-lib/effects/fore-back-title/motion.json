@@ -1,0 +1,19 @@
+{
+  "slug": "fore-back-title",
+  "en": "Fore/Back Title Block",
+  "cn": "前后景大字遮挡",
+  "category": "A · 开场钩子",
+  "source": "M01",
+  "component": "ForeBackTitle",
+  "triggers": [
+    "主题词",
+    "数字首次出现",
+    "章节揭题"
+  ],
+  "duration_frames": [
+    16,
+    28
+  ],
+  "asset": "optional",
+  "custom": false
+}

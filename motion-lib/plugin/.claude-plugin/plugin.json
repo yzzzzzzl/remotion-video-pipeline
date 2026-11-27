@@ -1,0 +1,7 @@
+{
+  "name": "remotion-motion-lib",
+  "description": "31 reusable, agent-agnostic motion effects for Remotion explainer videos. Pick by trigger word, copy one self-contained TSX component, bind it to a narration line.",
+  "author": { "name": "remotion-video-pipeline" },
+  "repository": "https://github.com/yzzzzzzl/remotion-video-pipeline",
+  "license": "MIT"
+}

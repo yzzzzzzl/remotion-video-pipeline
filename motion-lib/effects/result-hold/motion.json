@@ -1,0 +1,20 @@
+{
+  "slug": "result-hold",
+  "en": "Result Hold",
+  "cn": "结果停稳 + 关键词分两拍",
+  "category": "G · 收尾",
+  "source": "M21",
+  "component": "ResultHold",
+  "triggers": [
+    "结论",
+    "领取方式",
+    "关注",
+    "最后"
+  ],
+  "duration_frames": [
+    40,
+    90
+  ],
+  "asset": "none",
+  "custom": false
+}

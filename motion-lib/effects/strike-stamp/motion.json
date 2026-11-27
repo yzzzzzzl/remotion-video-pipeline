@@ -1,0 +1,19 @@
+{
+  "slug": "strike-stamp",
+  "en": "Strike & Stamp",
+  "cn": "删除线 + 印章",
+  "category": "H · 开场装饰",
+  "source": "10 §4",
+  "component": "StrikeStamp",
+  "triggers": [
+    "破除误区",
+    "其实不是",
+    "错误做法"
+  ],
+  "duration_frames": [
+    16,
+    28
+  ],
+  "asset": "none",
+  "custom": false
+}

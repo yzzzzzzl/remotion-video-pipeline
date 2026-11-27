@@ -1,0 +1,19 @@
+{
+  "slug": "spread-pages",
+  "en": "Two-Page Spread",
+  "cn": "双页展开 / 版式对照",
+  "category": "F · 对比合流",
+  "source": "M19",
+  "component": "SpreadPages",
+  "triggers": [
+    "同一内容做两种",
+    "封面与内页",
+    "排版对比"
+  ],
+  "duration_frames": [
+    20,
+    40
+  ],
+  "asset": "optional",
+  "custom": false
+}

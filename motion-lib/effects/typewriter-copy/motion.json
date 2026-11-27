@@ -1,0 +1,20 @@
+{
+  "slug": "typewriter-copy",
+  "en": "Typewriter & Copy",
+  "cn": "打字机 + 复制粘贴",
+  "category": "D · 操作演示",
+  "source": "M14",
+  "component": "TypewriterCopy",
+  "triggers": [
+    "写三行",
+    "复制",
+    "粘贴",
+    "prompt"
+  ],
+  "duration_frames": [
+    30,
+    70
+  ],
+  "asset": "none",
+  "custom": false
+}

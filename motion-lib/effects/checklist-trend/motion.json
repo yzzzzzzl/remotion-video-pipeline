@@ -1,0 +1,20 @@
+{
+  "slug": "checklist-trend",
+  "en": "Checklist Into Trend",
+  "cn": "逐条打勾 + 趋势逐点",
+  "category": "E · 数据揭示",
+  "source": "M17",
+  "component": "ChecklistTrend",
+  "triggers": [
+    "计划→完成→成效",
+    "逐条",
+    "趋势",
+    "累计"
+  ],
+  "duration_frames": [
+    40,
+    80
+  ],
+  "asset": "none",
+  "custom": false
+}

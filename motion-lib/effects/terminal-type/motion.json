@@ -1,0 +1,19 @@
+{
+  "slug": "terminal-type",
+  "en": "Terminal Typing",
+  "cn": "终端打字机",
+  "category": "H · 开场装饰",
+  "source": "10 §4",
+  "component": "TerminalType",
+  "triggers": [
+    "工具",
+    "教程",
+    "命令行"
+  ],
+  "duration_frames": [
+    30,
+    90
+  ],
+  "asset": "none",
+  "custom": false
+}

@@ -1,0 +1,19 @@
+{
+  "slug": "slow-push",
+  "en": "Slow Push / Flip / Gild",
+  "cn": "缓推近 / 书页翻动 / 烫金浮出",
+  "category": "H · 开场装饰",
+  "source": "10 §4",
+  "component": "SlowPush",
+  "triggers": [
+    "书籍",
+    "人文",
+    "历史"
+  ],
+  "duration_frames": [
+    60,
+    120
+  ],
+  "asset": "optional",
+  "custom": false
+}

@@ -1,0 +1,20 @@
+{
+  "slug": "draw-path",
+  "en": "Progressive Path Drawing",
+  "cn": "逐段连线 / 手绘箭头",
+  "category": "C · 过程演示",
+  "source": "M10",
+  "component": "DrawPath",
+  "triggers": [
+    "流程",
+    "关系",
+    "连起来",
+    "从 A 到 B"
+  ],
+  "duration_frames": [
+    30,
+    70
+  ],
+  "asset": "optional",
+  "custom": false
+}

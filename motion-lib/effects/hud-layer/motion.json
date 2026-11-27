@@ -1,0 +1,19 @@
+{
+  "slug": "hud-layer",
+  "en": "Persistent HUD Layer",
+  "cn": "常驻 HUD 层",
+  "category": "H · 开场装饰",
+  "source": "10 §4",
+  "component": "HUDLayer",
+  "triggers": [
+    "技术",
+    "系统感",
+    "开场"
+  ],
+  "duration_frames": [
+    0,
+    450
+  ],
+  "asset": "none",
+  "custom": false
+}

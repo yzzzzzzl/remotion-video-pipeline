@@ -1,0 +1,20 @@
+{
+  "slug": "drag-relink",
+  "en": "Drag Then Relink",
+  "cn": "拖动产生变化",
+  "category": "C · 过程演示",
+  "source": "M11",
+  "component": "DragRelink",
+  "triggers": [
+    "调整",
+    "挪位置",
+    "拖动",
+    "重新连接"
+  ],
+  "duration_frames": [
+    20,
+    36
+  ],
+  "asset": "none",
+  "custom": false
+}

@@ -1,0 +1,19 @@
+{
+  "slug": "rgb-glitch",
+  "en": "RGB Glitch Text",
+  "cn": "RGB 故障字",
+  "category": "H · 开场装饰",
+  "source": "10 §4",
+  "component": "RGBGlitch",
+  "triggers": [
+    "科技",
+    "反差",
+    "系统异常"
+  ],
+  "duration_frames": [
+    10,
+    24
+  ],
+  "asset": "none",
+  "custom": false
+}

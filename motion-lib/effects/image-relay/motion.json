@@ -1,0 +1,19 @@
+{
+  "slug": "image-relay",
+  "en": "Image Relay",
+  "cn": "多图接力换位",
+  "category": "F · 对比合流",
+  "source": "M20",
+  "component": "ImageRelay",
+  "triggers": [
+    "这几张",
+    "划着看",
+    "多张图"
+  ],
+  "duration_frames": [
+    30,
+    70
+  ],
+  "asset": "required",
+  "custom": false
+}

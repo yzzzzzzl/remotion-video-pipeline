@@ -1,0 +1,20 @@
+{
+  "slug": "ui-flow",
+  "en": "UI Step Flow",
+  "cn": "界面流程演示",
+  "category": "D · 操作演示",
+  "source": "M13",
+  "component": "UIFlow",
+  "triggers": [
+    "选择",
+    "安装",
+    "开始用",
+    "配置"
+  ],
+  "duration_frames": [
+    40,
+    90
+  ],
+  "asset": "optional",
+  "custom": false
+}

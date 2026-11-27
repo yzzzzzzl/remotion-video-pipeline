@@ -1,0 +1,19 @@
+{
+  "slug": "geometric-wipe",
+  "en": "Geometric Wipe Swap",
+  "cn": "几何擦除换版",
+  "category": "B · 文字强调",
+  "source": "M07",
+  "component": "GeometricWipe",
+  "triggers": [
+    "其实",
+    "但是",
+    "日期/年份"
+  ],
+  "duration_frames": [
+    12,
+    20
+  ],
+  "asset": "none",
+  "custom": false
+}

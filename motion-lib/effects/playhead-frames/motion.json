@@ -1,0 +1,20 @@
+{
+  "slug": "playhead-frames",
+  "en": "Playhead Across Frames",
+  "cn": "播放头扫画格",
+  "category": "D · 操作演示",
+  "source": "M15",
+  "component": "PlayheadFrames",
+  "triggers": [
+    "导出",
+    "套模板",
+    "下一张",
+    "批量"
+  ],
+  "duration_frames": [
+    30,
+    70
+  ],
+  "asset": "optional",
+  "custom": false
+}

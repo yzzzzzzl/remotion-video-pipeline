@@ -1,0 +1,20 @@
+{
+  "slug": "parallel-merge",
+  "en": "Parallel Tracks Merge",
+  "cn": "分路并行 + 结果合流",
+  "category": "F · 对比合流",
+  "source": "M18",
+  "component": "ParallelMerge",
+  "triggers": [
+    "A/B",
+    "对比",
+    "两种方案",
+    "并行"
+  ],
+  "duration_frames": [
+    40,
+    80
+  ],
+  "asset": "none",
+  "custom": false
+}

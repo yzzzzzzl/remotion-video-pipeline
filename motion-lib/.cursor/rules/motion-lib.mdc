@@ -1,0 +1,17 @@
+---
+description: Remotion 讲解视频动效库：选效果、套组件、绑台词锚点、抽帧质检、自定义效果
+globs: ["**/*.tsx", "**/*.json", "**/scenes.json", "**/timeline.json"]
+alwaysApply: false
+---
+
+# Remotion Motion Library
+
+本工作区含一套 agent 通用动效库。涉及视频动效时，先读仓库根目录 `AGENTS.md`（若本规则被复制到别处，读随库附带的 `AGENTS.md`），再按以下顺序：
+
+1. 未选效果 → 读 `INDEX.md`，按台词触发词挑一个主动作/章。
+2. 已选效果 → 读 `effects/<slug>/MOTION.md`，确认时序、坑、质检。
+3. 写代码 → 从 `core/MotionKit.tsx` 拷组件；`delay` 传 `at(i)`，不拍秒数；禁 `Math.random()`；不新增 npm 依赖。
+4. 质检 → 起点前 1 帧 / 起点后 2 帧 / 结果停稳帧三帧抽查；装饰类另查 frame 450 后无残留。
+5. 自定义 → 按 `MY-MOTIONS.md` 保存到 `~/remotion-my-motions/<slug>/`，跑 `python scripts/build_library.py` 重建索引。
+
+一屏文字块 ≤3~4，元素进场而非整页；结果停稳 ≥1s 且保留一个永动小元素。

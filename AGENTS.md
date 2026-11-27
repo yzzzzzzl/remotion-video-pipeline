@@ -23,6 +23,7 @@
 | G1 / G2 交互门协议 | `09-interaction-gates.md` |
 | 外部素材检索与版权 | `12-asset-sourcing.md` |
 | 讲解型动效库（21 个模式） | `13-motion-library.md` |
+| **Agent 通用动效库（31 个效果 + 代码）** | `motion-lib/AGENTS.md` → `motion-lib/INDEX.md` → `motion-lib/core/README.md` |
 
 ## 默认规格
 
@@ -44,8 +45,9 @@
 - `scripts/check_env.py`：环境体检（只读，输出缺失项安装命令）
 - `scripts/make_audio.py` / `align_real_voice.py` / `build_timeline.py`：AI 配音、真人录音逐字对轴、时间轴生成
 - `scripts/capture_douyin.js`：无头 Chrome + CDP 截获抖音媒体流（模式 A 用）
-- `assets/components/`：`Chrome.tsx`（画幅自适应底座）、`ShotEngine.tsx`（镜头页引擎）、`Opening.tech.tsx`（已验证横屏开场）、`Motion.primitives.tsx`（讲解型动效原语）
+- `assets/components/`：`Chrome.tsx`（画幅自适应底座）、`ShotEngine.tsx`（镜头页引擎）、`Opening.tech.tsx`（已验证横屏开场）、`Motion.primitives.tsx`（旧版讲解型动效原语）
 - `assets/templates/`：`Video.tsx` / `Root.tsx` / `scenes.json` 模板
+- `motion-lib/`：**Agent 通用动效库（31 个效果）**——`AGENTS.md` 通用入口、`INDEX.md` 按触发词检索、每个效果一张卡 + demo；`core/MotionKit.tsx` 是首选代码源，`MOTION-DIRECTOR.md` 选效果、`MOTION-TECHNIQUE.md` 质检、`MY-MOTIONS.md` 自定义效果。脱离本流水线也能单独用
 
 ## 工作目录约定
 

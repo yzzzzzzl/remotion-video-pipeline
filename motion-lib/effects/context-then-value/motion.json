@@ -1,0 +1,20 @@
+{
+  "slug": "context-then-value",
+  "en": "Context Before Value",
+  "cn": "先口径后揭值",
+  "category": "E · 数据揭示",
+  "source": "M16",
+  "component": "ContextThenValue",
+  "triggers": [
+    "数据显示",
+    "统计",
+    "根据报告",
+    "任何数字前"
+  ],
+  "duration_frames": [
+    32,
+    56
+  ],
+  "asset": "none",
+  "custom": false
+}

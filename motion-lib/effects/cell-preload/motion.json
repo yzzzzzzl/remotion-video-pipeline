@@ -1,0 +1,19 @@
+{
+  "slug": "cell-preload",
+  "en": "Cell Preload Preview",
+  "cn": "逐格点亮预告",
+  "category": "A · 开场钩子",
+  "source": "M04",
+  "component": "PulseCells",
+  "triggers": [
+    "六个",
+    "几个",
+    "有 N 个"
+  ],
+  "duration_frames": [
+    16,
+    40
+  ],
+  "asset": "none",
+  "custom": false
+}

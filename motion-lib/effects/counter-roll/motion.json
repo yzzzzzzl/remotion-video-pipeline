@@ -1,0 +1,19 @@
+{
+  "slug": "counter-roll",
+  "en": "Counter Roll",
+  "cn": "数字滚动计数",
+  "category": "H · 开场装饰",
+  "source": "10 §4",
+  "component": "CounterRoll",
+  "triggers": [
+    "数据",
+    "成绩",
+    "规模"
+  ],
+  "duration_frames": [
+    24,
+    48
+  ],
+  "asset": "none",
+  "custom": false
+}

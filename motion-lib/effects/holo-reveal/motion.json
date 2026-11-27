@@ -1,0 +1,19 @@
+{
+  "slug": "holo-reveal",
+  "en": "Hologram Card Reveal",
+  "cn": "全息卡揭示",
+  "category": "H · 开场装饰",
+  "source": "10 §4",
+  "component": "HoloReveal",
+  "triggers": [
+    "产品",
+    "核心概念",
+    "揭晓"
+  ],
+  "duration_frames": [
+    18,
+    30
+  ],
+  "asset": "optional",
+  "custom": false
+}
