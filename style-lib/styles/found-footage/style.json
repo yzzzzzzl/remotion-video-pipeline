@@ -1,0 +1,74 @@
+{
+  "slug": "found-footage",
+  "cn": "后室录像带",
+  "en": "Liminal Found Footage",
+  "cat": "film",
+  "catCn": "胶片与纪实",
+  "catEn": "Film & Documentary",
+  "signature": "灰绿监控感、时间码、噪点失真与空旷构图。",
+  "palette": {
+    "bg": "#1B211D",
+    "surface": "#27302A",
+    "surface2": "#39413B",
+    "text": "#D7DED2",
+    "dim": "#828981",
+    "accent": "#8FB37A",
+    "accent2": "#D8C36A",
+    "line": "#C0C7BC",
+    "problem": "#FF5C5C"
+  },
+  "fonts": {
+    "display": "Georgia, 'Songti SC', 'SimSun', serif",
+    "body": "Georgia, 'Songti SC', 'SimSun', serif",
+    "mono": "Consolas, 'JetBrains Mono', 'Courier New', monospace",
+    "weight": 500,
+    "tracking": "0.03em"
+  },
+  "stage": {
+    "type": "film",
+    "typeCn": "胶片颗粒 + 划痕 + 抖动",
+    "texture": "磁带噪点、色差、时间码、丢帧",
+    "grid": 0,
+    "glow": "#8FB37A",
+    "vignette": 0.5
+  },
+  "motion": {
+    "feel": "偶发丢帧、画面轻微跳动",
+    "easing": "linear",
+    "spawn": "硬切 / 闪白",
+    "density": "低",
+    "fps": 30
+  },
+  "camera": "固定监控机位，不主动运镜",
+  "goodFor": [
+    "悬疑开场",
+    "异常现象",
+    "空间感",
+    "氛围"
+  ],
+  "badFor": [
+    "清晰教学",
+    "数据",
+    "商业发布"
+  ],
+  "triggers": [
+    "录像",
+    "监控",
+    "空无一人",
+    "片段"
+  ],
+  "invariants": [
+    "时间码常驻且格式固定",
+    "构图留大量空处",
+    "色差只在边缘"
+  ],
+  "pitfalls": [
+    "噪点强到看不清字",
+    "主动推拉镜头"
+  ],
+  "recommendedMotions": [
+    "result-first-frame",
+    "counter-roll",
+    "geometric-wipe"
+  ]
+}

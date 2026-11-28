@@ -1,0 +1,74 @@
+{
+  "slug": "glass-product",
+  "cn": "玻璃质感",
+  "en": "Glass Product Render",
+  "cat": "dimension",
+  "catCn": "立体与材质",
+  "catEn": "3D & Material",
+  "signature": "深灰底、玻璃折射、边缘高光与柔和反射。",
+  "palette": {
+    "bg": "#1A1D22",
+    "surface": "#262B33",
+    "surface2": "#3A3F47",
+    "text": "#F0F3F7",
+    "dim": "#909397",
+    "accent": "#8FD8FF",
+    "accent2": "#C9A6FF",
+    "line": "#D6D9DD",
+    "problem": "#FF5C5C"
+  },
+  "fonts": {
+    "display": "Inter, 'PingFang SC', 'Microsoft YaHei', sans-serif",
+    "body": "Inter, 'PingFang SC', 'Microsoft YaHei', sans-serif",
+    "mono": "Consolas, 'JetBrains Mono', 'Courier New', monospace",
+    "weight": 600,
+    "tracking": "-0.01em"
+  },
+  "stage": {
+    "type": "toy",
+    "typeCn": "等距投影 + 立体高光",
+    "texture": "玻璃透射、菲涅尔亮边、地面反射",
+    "grid": 48,
+    "glow": "#8FD8FF",
+    "vignette": 0.16
+  },
+  "motion": {
+    "feel": "物体缓慢转一个角度、光扫过",
+    "easing": "spring",
+    "spawn": "逐层装配 / 旋转入场",
+    "density": "中",
+    "fps": 30
+  },
+  "camera": "缓慢环绕，光随镜头走",
+  "goodFor": [
+    "硬件产品",
+    "材质讲解",
+    "高端发布",
+    "工业设计"
+  ],
+  "badFor": [
+    "手绘",
+    "快节奏清单",
+    "儿童"
+  ],
+  "triggers": [
+    "材质",
+    "透",
+    "折射",
+    "工艺"
+  ],
+  "invariants": [
+    "边缘高光必须连续",
+    "背景保持深灰纯色",
+    "一次只展示一个物体"
+  ],
+  "pitfalls": [
+    "加多个彩色光源",
+    "用平涂代替折射"
+  ],
+  "recommendedMotions": [
+    "dual-merge",
+    "draw-path",
+    "node-connect"
+  ]
+}

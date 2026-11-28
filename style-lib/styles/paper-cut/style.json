@@ -1,0 +1,74 @@
+{
+  "slug": "paper-cut",
+  "cn": "红色剪纸",
+  "en": "Red Paper-cut",
+  "cat": "craft",
+  "catCn": "纸艺与工艺",
+  "catEn": "Paper & Craft",
+  "signature": "正红纸、镂空负形、对称纹样与金色点缀。",
+  "palette": {
+    "bg": "#B81C22",
+    "surface": "#D42A2C",
+    "surface2": "#D83E3E",
+    "text": "#FFF3DC",
+    "dim": "#DF9288",
+    "accent": "#F2C14E",
+    "accent2": "#FFF3DC",
+    "line": "#F6D9C6",
+    "problem": "#FF5C5C"
+  },
+  "fonts": {
+    "display": "Georgia, 'Songti SC', 'SimSun', serif",
+    "body": "Inter, 'PingFang SC', 'Microsoft YaHei', sans-serif",
+    "mono": "Inter, 'PingFang SC', 'Microsoft YaHei', sans-serif",
+    "weight": 500,
+    "tracking": "0.02em"
+  },
+  "stage": {
+    "type": "paper",
+    "typeCn": "纸纤维 + 印刷颗粒",
+    "texture": "纸纤维、镂空边缘、层叠投影",
+    "grid": 0,
+    "glow": "#F2C14E",
+    "vignette": 0.16
+  },
+  "motion": {
+    "feel": "从中心向外展开、镂空逐块透光",
+    "easing": "ease-in-out",
+    "spawn": "层叠揭开 / 光透",
+    "density": "低",
+    "fps": 30
+  },
+  "camera": "锁死正面，对称构图",
+  "goodFor": [
+    "节庆",
+    "民俗",
+    "传统故事",
+    "祝福"
+  ],
+  "badFor": [
+    "科技产品",
+    "数据报表",
+    "暗色悬疑"
+  ],
+  "triggers": [
+    "过年",
+    "传统",
+    "喜事",
+    "纹样"
+  ],
+  "invariants": [
+    "构图必须左右对称",
+    "只靠镂空造形，不画线稿",
+    "金色只用于点缀"
+  ],
+  "pitfalls": [
+    "加渐变和高光",
+    "用非对称现代排版"
+  ],
+  "recommendedMotions": [
+    "holo-reveal",
+    "slow-push",
+    "fore-back-title"
+  ]
+}

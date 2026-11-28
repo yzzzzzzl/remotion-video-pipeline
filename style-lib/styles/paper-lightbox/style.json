@@ -1,0 +1,74 @@
+{
+  "slug": "paper-lightbox",
+  "cn": "纸雕灯影",
+  "en": "Paper-cut Lightbox",
+  "cat": "craft",
+  "catCn": "纸艺与工艺",
+  "catEn": "Paper & Craft",
+  "signature": "暖褐底、多层纸雕前后错层、背光从深处透出。",
+  "palette": {
+    "bg": "#2A1B14",
+    "surface": "#3B281D",
+    "surface2": "#4F3C2F",
+    "text": "#FFEBCD",
+    "dim": "#9F8D7A",
+    "accent": "#FFB35C",
+    "accent2": "#8FB8A8",
+    "line": "#E5D2B7",
+    "problem": "#FF5C5C"
+  },
+  "fonts": {
+    "display": "Georgia, 'Songti SC', 'SimSun', serif",
+    "body": "Inter, 'PingFang SC', 'Microsoft YaHei', sans-serif",
+    "mono": "Inter, 'PingFang SC', 'Microsoft YaHei', sans-serif",
+    "weight": 500,
+    "tracking": "0.02em"
+  },
+  "stage": {
+    "type": "paper",
+    "typeCn": "纸纤维 + 印刷颗粒",
+    "texture": "纸层投影、背光衰减、景深模糊",
+    "grid": 0,
+    "glow": "#FFB35C",
+    "vignette": 0.16
+  },
+  "motion": {
+    "feel": "层依次亮起、光从后往前推",
+    "easing": "ease-in-out",
+    "spawn": "层叠揭开 / 光透",
+    "density": "低",
+    "fps": 30
+  },
+  "camera": "极缓慢推近，露出层次",
+  "goodFor": [
+    "故事开场",
+    "品牌片",
+    "人文",
+    "回忆"
+  ],
+  "badFor": [
+    "快节奏清单",
+    "实时数据",
+    "工具教程"
+  ],
+  "triggers": [
+    "从前",
+    "记忆",
+    "深处",
+    "一层层"
+  ],
+  "invariants": [
+    "至少三层可辨的前后关系",
+    "光源永远在画面深处",
+    "文字压在最前层"
+  ],
+  "pitfalls": [
+    "所有层同样亮度",
+    "用平涂色块代替纸层"
+  ],
+  "recommendedMotions": [
+    "holo-reveal",
+    "slow-push",
+    "fore-back-title"
+  ]
+}

@@ -1,0 +1,74 @@
+{
+  "slug": "woodcut",
+  "cn": "木刻版画",
+  "en": "Woodcut Print",
+  "cat": "print",
+  "catCn": "印刷与编辑",
+  "catEn": "Print & Editorial",
+  "signature": "纸黄底、黑色粗刻线、高对比阴阳面。",
+  "palette": {
+    "bg": "#EADDC0",
+    "surface": "#F3E8CE",
+    "surface2": "#DDD3BB",
+    "text": "#161310",
+    "dim": "#756E5F",
+    "accent": "#A8331F",
+    "accent2": "#161310",
+    "line": "#2F2B25",
+    "problem": "#FF5C5C"
+  },
+  "fonts": {
+    "display": "Georgia, 'Songti SC', 'SimSun', serif",
+    "body": "Georgia, 'Songti SC', 'SimSun', serif",
+    "mono": "Inter, 'PingFang SC', 'Microsoft YaHei', sans-serif",
+    "weight": 700,
+    "tracking": "-0.02em"
+  },
+  "stage": {
+    "type": "paper",
+    "typeCn": "纸纤维 + 印刷颗粒",
+    "texture": "刀刻痕、木纹、留白块面",
+    "grid": 0,
+    "glow": "#A8331F",
+    "vignette": 0.16
+  },
+  "motion": {
+    "feel": "块面一次压印，不做缓动",
+    "easing": "ease-out",
+    "spawn": "整块切入 / 分栏展开",
+    "density": "低",
+    "fps": 30
+  },
+  "camera": "锁死，靠黑白对比引导",
+  "goodFor": [
+    "历史叙事",
+    "寓言",
+    "社会议题",
+    "传统故事"
+  ],
+  "badFor": [
+    "科技产品",
+    "数据图表",
+    "轻快口播"
+  ],
+  "triggers": [
+    "从前",
+    "刻下",
+    "黑白",
+    "年代"
+  ],
+  "invariants": [
+    "只有黑白加一个暗红",
+    "用块面而非线条塑造形体",
+    "保留刀痕的不规则边缘"
+  ],
+  "pitfalls": [
+    "用细线描边",
+    "加柔和阴影"
+  ],
+  "recommendedMotions": [
+    "fore-back-title",
+    "result-hold",
+    "sweep-highlight"
+  ]
+}

@@ -1,0 +1,74 @@
+{
+  "slug": "data-physical",
+  "cn": "数据实物化",
+  "en": "Data Physicalization",
+  "cat": "evidence",
+  "catCn": "地图与实证",
+  "catEn": "Maps & Evidence",
+  "signature": "米白台面、实物柱块/球堆按数值堆叠，可数可量。",
+  "palette": {
+    "bg": "#F0EBE0",
+    "surface": "#FBF7EC",
+    "surface2": "#E6E2D8",
+    "text": "#26241F",
+    "dim": "#817E76",
+    "accent": "#D8703F",
+    "accent2": "#3E7C86",
+    "line": "#3E3C36",
+    "problem": "#FF5C5C"
+  },
+  "fonts": {
+    "display": "Inter, 'PingFang SC', 'Microsoft YaHei', sans-serif",
+    "body": "Inter, 'PingFang SC', 'Microsoft YaHei', sans-serif",
+    "mono": "Consolas, 'JetBrains Mono', 'Courier New', monospace",
+    "weight": 500,
+    "tracking": "0em"
+  },
+  "stage": {
+    "type": "lens",
+    "typeCn": "圆形视野 / 柔焦景深",
+    "texture": "实物投影、材质颗粒、刻度尺",
+    "grid": 0,
+    "glow": "#D8703F",
+    "vignette": 0.5
+  },
+  "motion": {
+    "feel": "单位逐格堆上去，堆完停稳",
+    "easing": "ease-out",
+    "spawn": "扫描线揭示 / 坐标标注",
+    "density": "中",
+    "fps": 30
+  },
+  "camera": "略高俯视，锁死",
+  "goodFor": [
+    "规模对比",
+    "数量",
+    "累积",
+    "库存"
+  ],
+  "badFor": [
+    "抽象概念",
+    "情绪",
+    "快切"
+  ],
+  "triggers": [
+    "多少个",
+    "堆起来",
+    "相当于",
+    "累计"
+  ],
+  "invariants": [
+    "每个单位都是可数的实体",
+    "必须有参照刻度",
+    "不用 3D 饼图"
+  ],
+  "pitfalls": [
+    "用抽象色块代替实物",
+    "加渐变高光"
+  ],
+  "recommendedMotions": [
+    "scan-zones",
+    "leader-line",
+    "playhead-frames"
+  ]
+}

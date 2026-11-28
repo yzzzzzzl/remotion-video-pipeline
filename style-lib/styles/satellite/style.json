@@ -1,0 +1,74 @@
+{
+  "slug": "satellite",
+  "cn": "卫星简报",
+  "en": "Satellite Briefing",
+  "cat": "evidence",
+  "catCn": "地图与实证",
+  "catEn": "Maps & Evidence",
+  "signature": "深蓝地形图、坐标网格、目标框与情报式标注。",
+  "palette": {
+    "bg": "#0A1A2E",
+    "surface": "#132C48",
+    "surface2": "#28405A",
+    "text": "#E2F0FF",
+    "dim": "#8190A1",
+    "accent": "#FFC44D",
+    "accent2": "#5CD6B0",
+    "line": "#C8D6E6",
+    "problem": "#FF5C5C"
+  },
+  "fonts": {
+    "display": "Inter, 'PingFang SC', 'Microsoft YaHei', sans-serif",
+    "body": "Inter, 'PingFang SC', 'Microsoft YaHei', sans-serif",
+    "mono": "Consolas, 'JetBrains Mono', 'Courier New', monospace",
+    "weight": 500,
+    "tracking": "0em"
+  },
+  "stage": {
+    "type": "lens",
+    "typeCn": "圆形视野 / 柔焦景深",
+    "texture": "地形色块、经纬网格、目标框",
+    "grid": 0,
+    "glow": "#FFC44D",
+    "vignette": 0.5
+  },
+  "motion": {
+    "feel": "扫描线揭示 → 目标框锁定 → 标注落位",
+    "easing": "ease-out",
+    "spawn": "扫描线揭示 / 坐标标注",
+    "density": "中",
+    "fps": 30
+  },
+  "camera": "从大范围一次推近到目标",
+  "goodFor": [
+    "地理",
+    "区域分析",
+    "勘测",
+    "事件定位"
+  ],
+  "badFor": [
+    "纯概念",
+    "人物情绪",
+    "手作"
+  ],
+  "triggers": [
+    "定位",
+    "区域",
+    "坐标",
+    "目标"
+  ],
+  "invariants": [
+    "经纬网常驻但低亮度",
+    "目标框用强调色且只有一个",
+    "标注带引出线"
+  ],
+  "pitfalls": [
+    "地形画成写实照片",
+    "同时框多个目标"
+  ],
+  "recommendedMotions": [
+    "scan-zones",
+    "leader-line",
+    "playhead-frames"
+  ]
+}

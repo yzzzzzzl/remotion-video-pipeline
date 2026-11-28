@@ -1,0 +1,74 @@
+{
+  "slug": "tilt-shift",
+  "cn": "移轴微缩",
+  "en": "Tilt-shift Miniature",
+  "cat": "dimension",
+  "catCn": "立体与材质",
+  "catEn": "3D & Material",
+  "signature": "高饱和实景感、上下柔焦、中间一条清晰带。",
+  "palette": {
+    "bg": "#BFD9E8",
+    "surface": "#D9E9F2",
+    "surface2": "#C7D7E0",
+    "text": "#23333F",
+    "dim": "#697E8B",
+    "accent": "#EF6A4C",
+    "accent2": "#3E8FB8",
+    "line": "#364753",
+    "problem": "#FF5C5C"
+  },
+  "fonts": {
+    "display": "Inter, 'PingFang SC', 'Microsoft YaHei', sans-serif",
+    "body": "Inter, 'PingFang SC', 'Microsoft YaHei', sans-serif",
+    "mono": "Consolas, 'JetBrains Mono', 'Courier New', monospace",
+    "weight": 600,
+    "tracking": "-0.01em"
+  },
+  "stage": {
+    "type": "toy",
+    "typeCn": "等距投影 + 立体高光",
+    "texture": "景深模糊、微缩高饱和、柔光",
+    "grid": 48,
+    "glow": "#EF6A4C",
+    "vignette": 0.16
+  },
+  "motion": {
+    "feel": "元素缓慢移动，像模型在动",
+    "easing": "spring",
+    "spawn": "逐层装配 / 旋转入场",
+    "density": "中",
+    "fps": 30
+  },
+  "camera": "高角度俯视 + 移轴浅景深",
+  "goodFor": [
+    "城市",
+    "规模感",
+    "流程全景",
+    "旅行"
+  ],
+  "badFor": [
+    "文字精读",
+    "界面操作",
+    "抽象概念"
+  ],
+  "triggers": [
+    "全貌",
+    "缩小看",
+    "整个",
+    "城市"
+  ],
+  "invariants": [
+    "只有中间带清晰，上下必须虚",
+    "色彩略过饱和",
+    "镜头不推拉，只平移"
+  ],
+  "pitfalls": [
+    "全画面都清晰",
+    "用纯色背景"
+  ],
+  "recommendedMotions": [
+    "dual-merge",
+    "draw-path",
+    "node-connect"
+  ]
+}

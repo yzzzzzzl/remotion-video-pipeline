@@ -1,0 +1,74 @@
+{
+  "slug": "dataviz-clean",
+  "cn": "数据叙事",
+  "en": "Clean Data Story",
+  "cat": "data",
+  "catCn": "数据与图表",
+  "catEn": "Data & Charts",
+  "signature": "白底、一根主轴、蓝橙双色、超大结论数字。",
+  "palette": {
+    "bg": "#FBFCFE",
+    "surface": "#F0F4FA",
+    "surface2": "#DADFE7",
+    "text": "#152238",
+    "dim": "#7C8491",
+    "accent": "#2F6BFF",
+    "accent2": "#FF8A3D",
+    "line": "#313C50",
+    "problem": "#FF5C5C"
+  },
+  "fonts": {
+    "display": "Inter, 'PingFang SC', 'Microsoft YaHei', sans-serif",
+    "body": "Inter, 'PingFang SC', 'Microsoft YaHei', sans-serif",
+    "mono": "Consolas, 'JetBrains Mono', 'Courier New', monospace",
+    "weight": 500,
+    "tracking": "0em"
+  },
+  "stage": {
+    "type": "grid",
+    "typeCn": "细网格 + 暗角",
+    "texture": "极细轴线、无网格或仅横向参考线",
+    "grid": 48,
+    "glow": "#2F6BFF",
+    "vignette": 0.5
+  },
+  "motion": {
+    "feel": "轴线生长 → 数值滚动 → 结论停稳",
+    "easing": "ease-out",
+    "spawn": "数值滚动 / 轴线生长",
+    "density": "中",
+    "fps": 30
+  },
+  "camera": "锁死，重点处一次轻微推近",
+  "goodFor": [
+    "增长数据",
+    "对比结论",
+    "年度报告",
+    "调研结果"
+  ],
+  "badFor": [
+    "玄学概念",
+    "人物特写",
+    "童趣内容"
+  ],
+  "triggers": [
+    "数据显示",
+    "据统计",
+    "增长到",
+    "占比"
+  ],
+  "invariants": [
+    "一张图只讲一个结论",
+    "先给口径再揭数值",
+    "去掉所有不必要的网格线"
+  ],
+  "pitfalls": [
+    "一页塞三张图",
+    "用 3D 饼图或彩虹配色"
+  ],
+  "recommendedMotions": [
+    "context-then-value",
+    "checklist-trend",
+    "flow-dots"
+  ]
+}

@@ -1,0 +1,74 @@
+{
+  "slug": "ink-wash",
+  "cn": "中国水墨",
+  "en": "Chinese Ink Wash",
+  "cat": "craft",
+  "catCn": "纸艺与工艺",
+  "catEn": "Paper & Craft",
+  "signature": "宣纸白、墨色浓淡、大面积留白与一笔晕染。",
+  "palette": {
+    "bg": "#F5F1E6",
+    "surface": "#FBF8EF",
+    "surface2": "#E5E2DA",
+    "text": "#1E1C19",
+    "dim": "#7F7C75",
+    "accent": "#A8331F",
+    "accent2": "#5A6B5E",
+    "line": "#383632",
+    "problem": "#FF5C5C"
+  },
+  "fonts": {
+    "display": "Georgia, 'Songti SC', 'SimSun', serif",
+    "body": "Inter, 'PingFang SC', 'Microsoft YaHei', sans-serif",
+    "mono": "Inter, 'PingFang SC', 'Microsoft YaHei', sans-serif",
+    "weight": 500,
+    "tracking": "0.02em"
+  },
+  "stage": {
+    "type": "paper",
+    "typeCn": "纸纤维 + 印刷颗粒",
+    "texture": "宣纸纤维、墨晕、飞白",
+    "grid": 0,
+    "glow": "#A8331F",
+    "vignette": 0.16
+  },
+  "motion": {
+    "feel": "墨一笔落下后慢慢晕开",
+    "easing": "ease-in-out",
+    "spawn": "层叠揭开 / 光透",
+    "density": "低",
+    "fps": 30
+  },
+  "camera": "锁死留白构图，不推不拉",
+  "goodFor": [
+    "哲学",
+    "古诗",
+    "东方美学",
+    "慢叙事"
+  ],
+  "badFor": [
+    "数据密集",
+    "产品发布",
+    "快节奏口播"
+  ],
+  "triggers": [
+    "留白",
+    "意境",
+    "一笔",
+    "山水"
+  ],
+  "invariants": [
+    "留白至少占四成画面",
+    "只用墨色浓淡，不用鲜艳色",
+    "印章红只能有一枚"
+  ],
+  "pitfalls": [
+    "把画面填满",
+    "用渐变模拟水墨"
+  ],
+  "recommendedMotions": [
+    "holo-reveal",
+    "slow-push",
+    "fore-back-title"
+  ]
+}

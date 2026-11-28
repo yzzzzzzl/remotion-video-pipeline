@@ -1,0 +1,74 @@
+{
+  "slug": "gilded",
+  "cn": "金箔彩绘",
+  "en": "Gilded Illumination",
+  "cat": "craft",
+  "catCn": "纸艺与工艺",
+  "catEn": "Paper & Craft",
+  "signature": "深红底、金色装饰边框、细密纹样与手抄本感。",
+  "palette": {
+    "bg": "#3A1016",
+    "surface": "#521A20",
+    "surface2": "#622E2F",
+    "text": "#F6E3B4",
+    "dim": "#A1846D",
+    "accent": "#D9A441",
+    "accent2": "#7FA88C",
+    "line": "#DFCAA1",
+    "problem": "#FF5C5C"
+  },
+  "fonts": {
+    "display": "Georgia, 'Songti SC', 'SimSun', serif",
+    "body": "Inter, 'PingFang SC', 'Microsoft YaHei', sans-serif",
+    "mono": "Inter, 'PingFang SC', 'Microsoft YaHei', sans-serif",
+    "weight": 500,
+    "tracking": "0.02em"
+  },
+  "stage": {
+    "type": "paper",
+    "typeCn": "纸纤维 + 印刷颗粒",
+    "texture": "金箔反光、细线藤蔓、边框四角装饰",
+    "grid": 0,
+    "glow": "#D9A441",
+    "vignette": 0.16
+  },
+  "motion": {
+    "feel": "纹样缓慢生长、标题最后烫金浮出",
+    "easing": "ease-in-out",
+    "spawn": "层叠揭开 / 光透",
+    "density": "低",
+    "fps": 30
+  },
+  "camera": "锁死，像翻一页手抄本",
+  "goodFor": [
+    "经典著作",
+    "历史人物",
+    "荣誉",
+    "仪式感"
+  ],
+  "badFor": [
+    "科技",
+    "数据",
+    "日常教程"
+  ],
+  "triggers": [
+    "经典",
+    "手抄",
+    "传承",
+    "卷首"
+  ],
+  "invariants": [
+    "四边必须有装饰框",
+    "金色只用于框与首字",
+    "正文用衬线"
+  ],
+  "pitfalls": [
+    "金色铺满背景",
+    "用现代无衬线"
+  ],
+  "recommendedMotions": [
+    "holo-reveal",
+    "slow-push",
+    "fore-back-title"
+  ]
+}

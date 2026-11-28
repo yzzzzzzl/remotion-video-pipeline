@@ -1,0 +1,74 @@
+{
+  "slug": "dark-tech-keynote",
+  "cn": "深色科技发布",
+  "en": "Dark Tech Keynote",
+  "cat": "tech",
+  "catCn": "科技与界面",
+  "catEn": "Tech & Interfaces",
+  "signature": "近黑舞台、发丝网格、单一品牌强调色，界面自己就是主角。",
+  "palette": {
+    "bg": "#080B12",
+    "surface": "#121722",
+    "surface2": "#272C37",
+    "text": "#E8EDF5",
+    "dim": "#83878F",
+    "accent": "#B7F34A",
+    "accent2": "#8B7CFF",
+    "line": "#CDD2DA",
+    "problem": "#FF5C5C"
+  },
+  "fonts": {
+    "display": "Inter, 'PingFang SC', 'Microsoft YaHei', sans-serif",
+    "body": "Inter, 'PingFang SC', 'Microsoft YaHei', sans-serif",
+    "mono": "Consolas, 'JetBrains Mono', 'Courier New', monospace",
+    "weight": 600,
+    "tracking": "-0.03em"
+  },
+  "stage": {
+    "type": "grid",
+    "typeCn": "细网格 + 暗角",
+    "texture": "无颗粒，1px 细线，48px 模块网格",
+    "grid": 48,
+    "glow": "#B7F34A",
+    "vignette": 0.5
+  },
+  "motion": {
+    "feel": "精准落格、快出带一次小过冲、立即停稳",
+    "easing": "back(1.3)",
+    "spawn": "短促弹入 0.2~0.3s",
+    "density": "低",
+    "fps": 30
+  },
+  "camera": "锁死近景 → 一拍拉出 → 关键数字独占一屏",
+  "goodFor": [
+    "产品发布",
+    "工具教程",
+    "功能清单",
+    "数据亮点"
+  ],
+  "badFor": [
+    "人文故事",
+    "儿童内容",
+    "手作质感"
+  ],
+  "triggers": [
+    "发布",
+    "上线",
+    "新版本",
+    "一个数字"
+  ],
+  "invariants": [
+    "只用一个强调色，出现第二个就是错的",
+    "每个元素吸到网格、动作落在拍点",
+    "大字独占一屏，不加字幕压在上面"
+  ],
+  "pitfalls": [
+    "把界面画成真实操作系统（红黄绿按钮）",
+    "加暖棕色调或胶片颗粒"
+  ],
+  "recommendedMotions": [
+    "number-accent",
+    "ui-flow",
+    "typewriter-copy"
+  ]
+}

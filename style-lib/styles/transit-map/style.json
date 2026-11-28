@@ -1,0 +1,74 @@
+{
+  "slug": "transit-map",
+  "cn": "地铁线路图",
+  "en": "Transit Map",
+  "cat": "evidence",
+  "catCn": "地图与实证",
+  "catEn": "Maps & Evidence",
+  "signature": "白底、彩色线路只走水平/垂直/45 度、圆点站点。",
+  "palette": {
+    "bg": "#FAFAF7",
+    "surface": "#FFFFFF",
+    "surface2": "#E8E9EA",
+    "text": "#1C2430",
+    "dim": "#80848A",
+    "accent": "#E23B32",
+    "accent2": "#2E6FD8",
+    "line": "#373E48",
+    "problem": "#FF5C5C"
+  },
+  "fonts": {
+    "display": "Inter, 'PingFang SC', 'Microsoft YaHei', sans-serif",
+    "body": "Inter, 'PingFang SC', 'Microsoft YaHei', sans-serif",
+    "mono": "Consolas, 'JetBrains Mono', 'Courier New', monospace",
+    "weight": 500,
+    "tracking": "0em"
+  },
+  "stage": {
+    "type": "lens",
+    "typeCn": "圆形视野 / 柔焦景深",
+    "texture": "无纹理、等距站点、线路标签",
+    "grid": 0,
+    "glow": "#E23B32",
+    "vignette": 0.5
+  },
+  "motion": {
+    "feel": "线路逐段画出，站点依次点亮",
+    "easing": "ease-out",
+    "spawn": "扫描线揭示 / 坐标标注",
+    "density": "中",
+    "fps": 30
+  },
+  "camera": "锁死，沿线平移",
+  "goodFor": [
+    "路径选择",
+    "分类关系",
+    "流程分支",
+    "网络"
+  ],
+  "badFor": [
+    "抒情",
+    "写实场景",
+    "肌理质感"
+  ],
+  "triggers": [
+    "路线",
+    "换乘",
+    "分支",
+    "到达"
+  ],
+  "invariants": [
+    "线路只走直角与 45 度",
+    "站点是空心圆点",
+    "换乘站用双环"
+  ],
+  "pitfalls": [
+    "用曲线连线",
+    "站点画成方块"
+  ],
+  "recommendedMotions": [
+    "scan-zones",
+    "leader-line",
+    "playhead-frames"
+  ]
+}

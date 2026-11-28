@@ -1,0 +1,74 @@
+{
+  "slug": "microscope",
+  "cn": "显微镜下",
+  "en": "Under the Microscope",
+  "cat": "evidence",
+  "catCn": "地图与实证",
+  "catEn": "Maps & Evidence",
+  "signature": "黑底圆形视野、柔和细胞色、边缘暗角与标尺。",
+  "palette": {
+    "bg": "#05070A",
+    "surface": "#0E1620",
+    "surface2": "#242C35",
+    "text": "#E6F4F0",
+    "dim": "#818988",
+    "accent": "#6FE0C0",
+    "accent2": "#E88FA8",
+    "line": "#CBD8D4",
+    "problem": "#FF5C5C"
+  },
+  "fonts": {
+    "display": "Inter, 'PingFang SC', 'Microsoft YaHei', sans-serif",
+    "body": "Inter, 'PingFang SC', 'Microsoft YaHei', sans-serif",
+    "mono": "Consolas, 'JetBrains Mono', 'Courier New', monospace",
+    "weight": 500,
+    "tracking": "0em"
+  },
+  "stage": {
+    "type": "lens",
+    "typeCn": "圆形视野 / 柔焦景深",
+    "texture": "圆形遮罩、柔焦、标尺刻度",
+    "grid": 0,
+    "glow": "#6FE0C0",
+    "vignette": 0.5
+  },
+  "motion": {
+    "feel": "焦距缓慢合上，结构逐渐清晰",
+    "easing": "ease-out",
+    "spawn": "扫描线揭示 / 坐标标注",
+    "density": "中",
+    "fps": 30
+  },
+  "camera": "锁死，只做焦点变化",
+  "goodFor": [
+    "生物",
+    "微观",
+    "样本",
+    "细节放大"
+  ],
+  "badFor": [
+    "宏观叙事",
+    "清单",
+    "界面"
+  ],
+  "triggers": [
+    "放大",
+    "细胞",
+    "样本",
+    "微观"
+  ],
+  "invariants": [
+    "画面必须是圆形视野",
+    "视野外纯黑",
+    "标尺常驻右下"
+  ],
+  "pitfalls": [
+    "把画面画满整屏",
+    "用高饱和撞色"
+  ],
+  "recommendedMotions": [
+    "scan-zones",
+    "leader-line",
+    "playhead-frames"
+  ]
+}

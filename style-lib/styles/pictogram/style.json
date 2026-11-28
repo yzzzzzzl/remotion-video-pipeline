@@ -1,0 +1,74 @@
+{
+  "slug": "pictogram",
+  "cn": "象形运动图形",
+  "en": "Pictogram Motion",
+  "cat": "geometry",
+  "catCn": "几何与构成",
+  "catEn": "Geometry",
+  "signature": "白底单色、极简图标网格、图标按序点亮。",
+  "palette": {
+    "bg": "#FFFFFF",
+    "surface": "#F6F6F4",
+    "surface2": "#E0E0DE",
+    "text": "#1A1A1A",
+    "dim": "#818181",
+    "accent": "#2E6FD8",
+    "accent2": "#8A8A8A",
+    "line": "#353535",
+    "problem": "#FF5C5C"
+  },
+  "fonts": {
+    "display": "'Arial Black', 'Microsoft YaHei', sans-serif",
+    "body": "Inter, 'PingFang SC', 'Microsoft YaHei', sans-serif",
+    "mono": "Inter, 'PingFang SC', 'Microsoft YaHei', sans-serif",
+    "weight": 700,
+    "tracking": "-0.04em"
+  },
+  "stage": {
+    "type": "flat",
+    "typeCn": "纯色平涂 + 硬边几何",
+    "texture": "无纹理、等线宽图标、网格对齐",
+    "grid": 0,
+    "glow": "#2E6FD8",
+    "vignette": 0.16
+  },
+  "motion": {
+    "feel": "图标依次点亮，一个节拍一个",
+    "easing": "ease-out",
+    "spawn": "几何块滑动拼接",
+    "density": "中",
+    "fps": 30
+  },
+  "camera": "锁死，视线按网格顺序走",
+  "goodFor": [
+    "清单",
+    "步骤",
+    "分类",
+    "图标化讲解"
+  ],
+  "badFor": [
+    "情绪长文",
+    "写实",
+    "手作"
+  ],
+  "triggers": [
+    "第一步",
+    "图标",
+    "依次",
+    "共几个"
+  ],
+  "invariants": [
+    "所有图标统一线宽与圆角",
+    "一次只亮一个",
+    "不用文字解释图标"
+  ],
+  "pitfalls": [
+    "图标风格混用",
+    "加阴影和渐变"
+  ],
+  "recommendedMotions": [
+    "pulse-cells",
+    "dual-merge",
+    "result-hold"
+  ]
+}

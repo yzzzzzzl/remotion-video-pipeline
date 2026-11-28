@@ -1,0 +1,74 @@
+{
+  "slug": "editorial",
+  "cn": "杂志编辑",
+  "en": "Editorial Magazine",
+  "cat": "print",
+  "catCn": "印刷与编辑",
+  "catEn": "Print & Editorial",
+  "signature": "米白纸、黑红双色、大号衬线标题与严谨分栏。",
+  "palette": {
+    "bg": "#F7F3EA",
+    "surface": "#FFFDF7",
+    "surface2": "#E8E6E1",
+    "text": "#1A1A1A",
+    "dim": "#7D7C78",
+    "accent": "#C8352B",
+    "accent2": "#1A1A1A",
+    "line": "#353433",
+    "problem": "#FF5C5C"
+  },
+  "fonts": {
+    "display": "Georgia, 'Songti SC', 'SimSun', serif",
+    "body": "Georgia, 'Songti SC', 'SimSun', serif",
+    "mono": "Inter, 'PingFang SC', 'Microsoft YaHei', sans-serif",
+    "weight": 700,
+    "tracking": "-0.02em"
+  },
+  "stage": {
+    "type": "paper",
+    "typeCn": "纸纤维 + 印刷颗粒",
+    "texture": "纸张微纹、细分隔线、页眉页码",
+    "grid": 0,
+    "glow": "#C8352B",
+    "vignette": 0.16
+  },
+  "motion": {
+    "feel": "整块切入、标题先落、正文分栏展开",
+    "easing": "ease-out",
+    "spawn": "整块切入 / 分栏展开",
+    "density": "低",
+    "fps": 30
+  },
+  "camera": "锁死版面，像翻页一样切换",
+  "goodFor": [
+    "深度长文",
+    "观点评论",
+    "人物专访",
+    "行业报告"
+  ],
+  "badFor": [
+    "快节奏口播",
+    "儿童内容",
+    "实时数据"
+  ],
+  "triggers": [
+    "文章",
+    "报道",
+    "观点",
+    "第一期"
+  ],
+  "invariants": [
+    "标题用衬线且字号压过正文三倍",
+    "正文分两栏，不铺满整屏",
+    "红色只用于标题与序号"
+  ],
+  "pitfalls": [
+    "用无衬线大标题",
+    "加圆角卡片和阴影"
+  ],
+  "recommendedMotions": [
+    "fore-back-title",
+    "result-hold",
+    "sweep-highlight"
+  ]
+}

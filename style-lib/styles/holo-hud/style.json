@@ -1,0 +1,74 @@
+{
+  "slug": "holo-hud",
+  "cn": "全息 HUD",
+  "en": "Hologram HUD",
+  "cat": "tech",
+  "catCn": "科技与界面",
+  "catEn": "Tech & Interfaces",
+  "signature": "深蓝黑底、青色描边、四角定位框与扫描读数。",
+  "palette": {
+    "bg": "#04121C",
+    "surface": "#0A2432",
+    "surface2": "#1E3946",
+    "text": "#CFF6FF",
+    "dim": "#748F99",
+    "accent": "#3DE1FF",
+    "accent2": "#FFB454",
+    "line": "#B7DBE4",
+    "problem": "#FF5C5C"
+  },
+  "fonts": {
+    "display": "Inter, 'PingFang SC', 'Microsoft YaHei', sans-serif",
+    "body": "Inter, 'PingFang SC', 'Microsoft YaHei', sans-serif",
+    "mono": "Consolas, 'JetBrains Mono', 'Courier New', monospace",
+    "weight": 600,
+    "tracking": "-0.03em"
+  },
+  "stage": {
+    "type": "grid",
+    "typeCn": "细网格 + 暗角",
+    "texture": "细扫描线、角标刻度、0.35 透明度面板",
+    "grid": 48,
+    "glow": "#3DE1FF",
+    "vignette": 0.5
+  },
+  "motion": {
+    "feel": "匀速扫描、读数逐位刷新、无弹性",
+    "easing": "back(1.3)",
+    "spawn": "短促弹入 0.2~0.3s",
+    "density": "低",
+    "fps": 30
+  },
+  "camera": "轻微漂移的锁定机位，数据层前后错层",
+  "goodFor": [
+    "系统架构",
+    "监控大盘",
+    "科幻概念",
+    "流程状态"
+  ],
+  "badFor": [
+    "温情叙事",
+    "美食旅行",
+    "纸质档案"
+  ],
+  "triggers": [
+    "系统",
+    "状态",
+    "扫描",
+    "实时"
+  ],
+  "invariants": [
+    "面板保持半透明，不能盖住主体",
+    "扫描线只在背景层，不压字幕",
+    "读数用等宽字体且右对齐"
+  ],
+  "pitfalls": [
+    "扫描线频率过高造成摩尔纹",
+    "HUD 元素超过 450 帧还不卸载"
+  ],
+  "recommendedMotions": [
+    "number-accent",
+    "ui-flow",
+    "typewriter-copy"
+  ]
+}

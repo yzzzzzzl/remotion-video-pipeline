@@ -1,0 +1,7 @@
+{
+  "name": "remotion-style-lib",
+  "description": "60 original, agent-agnostic film looks for Remotion explainer videos. Pick one look per film, wrap the whole timeline in StyleStage, and combine it with the 31 motion effects.",
+  "author": { "name": "remotion-video-pipeline" },
+  "repository": "https://github.com/yzzzzzzl/remotion-video-pipeline",
+  "license": "MIT"
+}

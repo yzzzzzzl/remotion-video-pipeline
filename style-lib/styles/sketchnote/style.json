@@ -1,0 +1,74 @@
+{
+  "slug": "sketchnote",
+  "cn": "视觉笔记",
+  "en": "Sketchnote",
+  "cat": "board",
+  "catCn": "板书与手绘",
+  "catEn": "Board & Hand-drawn",
+  "signature": "米黄纸、多色手绘框、小图标与放射箭头。",
+  "palette": {
+    "bg": "#FBF5E6",
+    "surface": "#FFFDF4",
+    "surface2": "#EAE8E0",
+    "text": "#2B2B2B",
+    "dim": "#89867F",
+    "accent": "#E4633F",
+    "accent2": "#2E8B8B",
+    "line": "#444341",
+    "problem": "#FF5C5C"
+  },
+  "fonts": {
+    "display": "'Comic Sans MS', 'Kaiti SC', 'STKaiti', cursive",
+    "body": "'Comic Sans MS', 'Kaiti SC', 'STKaiti', cursive",
+    "mono": "'Comic Sans MS', 'Kaiti SC', 'STKaiti', cursive",
+    "weight": 400,
+    "tracking": "0.01em"
+  },
+  "stage": {
+    "type": "chalk",
+    "typeCn": "粉笔粉尘 + 板面擦痕",
+    "texture": "纸张纤维、手绘边框、阴影线",
+    "grid": 0,
+    "glow": "#E4633F",
+    "vignette": 0.16
+  },
+  "motion": {
+    "feel": "图标逐个冒出、框线手抖动闭合",
+    "easing": "ease-in-out",
+    "spawn": "手写逐笔长出",
+    "density": "中",
+    "fps": 30
+  },
+  "camera": "锁死整页，视线靠图标引导",
+  "goodFor": [
+    "读书笔记",
+    "会议纪要",
+    "知识卡片",
+    "复盘"
+  ],
+  "badFor": [
+    "精确数据",
+    "产品界面",
+    "正式公文"
+  ],
+  "triggers": [
+    "笔记",
+    "要点",
+    "记住",
+    "三个"
+  ],
+  "invariants": [
+    "每个要点配一个小图标",
+    "框线不求笔直",
+    "留白比文字多"
+  ],
+  "pitfalls": [
+    "文字块太大变成普通 PPT",
+    "用矢量直线图标"
+  ],
+  "recommendedMotions": [
+    "draw-path",
+    "sweep-highlight",
+    "leader-line"
+  ]
+}

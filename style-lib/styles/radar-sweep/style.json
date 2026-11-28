@@ -1,0 +1,74 @@
+{
+  "slug": "radar-sweep",
+  "cn": "雷达扫描",
+  "en": "Radar Sweep",
+  "cat": "data",
+  "catCn": "数据与图表",
+  "catEn": "Data & Charts",
+  "signature": "墨绿圆屏、同心圆刻度、一道扇形扫光带出目标点。",
+  "palette": {
+    "bg": "#041A12",
+    "surface": "#0A2C1E",
+    "surface2": "#19412F",
+    "text": "#9CFFC6",
+    "dim": "#589875",
+    "accent": "#42FF9E",
+    "accent2": "#FFD166",
+    "line": "#8AE4B0",
+    "problem": "#FF5C5C"
+  },
+  "fonts": {
+    "display": "Inter, 'PingFang SC', 'Microsoft YaHei', sans-serif",
+    "body": "Inter, 'PingFang SC', 'Microsoft YaHei', sans-serif",
+    "mono": "Consolas, 'JetBrains Mono', 'Courier New', monospace",
+    "weight": 500,
+    "tracking": "0em"
+  },
+  "stage": {
+    "type": "grid",
+    "typeCn": "细网格 + 暗角",
+    "texture": "同心圆、方位刻度、余辉拖尾",
+    "grid": 48,
+    "glow": "#42FF9E",
+    "vignette": 0.5
+  },
+  "motion": {
+    "feel": "扇形匀速旋转，扫到才点亮",
+    "easing": "ease-out",
+    "spawn": "数值滚动 / 轴线生长",
+    "density": "中",
+    "fps": 30
+  },
+  "camera": "锁死圆屏，不推不拉",
+  "goodFor": [
+    "监测",
+    "发现",
+    "范围",
+    "搜索类讲解"
+  ],
+  "badFor": [
+    "长文阅读",
+    "精细表格",
+    "人文叙事"
+  ],
+  "triggers": [
+    "扫描",
+    "发现",
+    "范围",
+    "信号"
+  ],
+  "invariants": [
+    "目标点只在扫过时亮起",
+    "余辉衰减要可见",
+    "刻度保持低亮度"
+  ],
+  "pitfalls": [
+    "扫描速度忽快忽慢",
+    "目标点一开场就全亮"
+  ],
+  "recommendedMotions": [
+    "context-then-value",
+    "checklist-trend",
+    "flow-dots"
+  ]
+}

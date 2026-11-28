@@ -1,0 +1,74 @@
+{
+  "slug": "chalkboard",
+  "cn": "黑板粉笔",
+  "en": "Chalkboard",
+  "cat": "board",
+  "catCn": "板书与手绘",
+  "catEn": "Board & Hand-drawn",
+  "signature": "墨绿板面、白色粉笔字、擦痕与粉尘，边讲边写。",
+  "palette": {
+    "bg": "#20362C",
+    "surface": "#2A4436",
+    "surface2": "#3E5547",
+    "text": "#F2F0E4",
+    "dim": "#949C91",
+    "accent": "#FFE08A",
+    "accent2": "#FF9B8A",
+    "line": "#D9DACE",
+    "problem": "#FF5C5C"
+  },
+  "fonts": {
+    "display": "'Comic Sans MS', 'Kaiti SC', 'STKaiti', cursive",
+    "body": "'Comic Sans MS', 'Kaiti SC', 'STKaiti', cursive",
+    "mono": "'Comic Sans MS', 'Kaiti SC', 'STKaiti', cursive",
+    "weight": 400,
+    "tracking": "0.01em"
+  },
+  "stage": {
+    "type": "chalk",
+    "typeCn": "粉笔粉尘 + 板面擦痕",
+    "texture": "粉笔颗粒、板擦痕、手绘下划线",
+    "grid": 0,
+    "glow": "#FFE08A",
+    "vignette": 0.16
+  },
+  "motion": {
+    "feel": "逐笔写出、停顿、圈重点",
+    "easing": "ease-in-out",
+    "spawn": "手写逐笔长出",
+    "density": "中",
+    "fps": 30
+  },
+  "camera": "锁死黑板，靠书写推进",
+  "goodFor": [
+    "课堂讲解",
+    "公式推导",
+    "概念定义",
+    "复习提纲"
+  ],
+  "badFor": [
+    "产品发布",
+    "数据大盘",
+    "高端质感"
+  ],
+  "triggers": [
+    "记住",
+    "推导",
+    "公式",
+    "第一步"
+  ],
+  "invariants": [
+    "字必须像手写，不用无衬线印刷体",
+    "重点只用圈和下划线，不用高亮块",
+    "一次只写一行"
+  ],
+  "pitfalls": [
+    "粉笔字太整齐像印刷体",
+    "用纯白背景配黑字"
+  ],
+  "recommendedMotions": [
+    "draw-path",
+    "sweep-highlight",
+    "leader-line"
+  ]
+}

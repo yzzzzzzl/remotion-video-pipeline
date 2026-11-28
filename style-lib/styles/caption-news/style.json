@@ -1,0 +1,74 @@
+{
+  "slug": "caption-news",
+  "cn": "字幕新闻",
+  "en": "Caption News",
+  "cat": "film",
+  "catCn": "胶片与纪实",
+  "catEn": "Film & Documentary",
+  "signature": "深蓝底、红色条带、下方三分之一字幕条与台标。",
+  "palette": {
+    "bg": "#0B2140",
+    "surface": "#15345C",
+    "surface2": "#2B476C",
+    "text": "#F2F6FF",
+    "dim": "#8A96A9",
+    "accent": "#E0322C",
+    "accent2": "#F2C94C",
+    "line": "#D6DCE8",
+    "problem": "#FF5C5C"
+  },
+  "fonts": {
+    "display": "Georgia, 'Songti SC', 'SimSun', serif",
+    "body": "Georgia, 'Songti SC', 'SimSun', serif",
+    "mono": "Consolas, 'JetBrains Mono', 'Courier New', monospace",
+    "weight": 500,
+    "tracking": "0.03em"
+  },
+  "stage": {
+    "type": "film",
+    "typeCn": "胶片颗粒 + 划痕 + 抖动",
+    "texture": "细横纹、条带、无颗粒",
+    "grid": 0,
+    "glow": "#E0322C",
+    "vignette": 0.5
+  },
+  "motion": {
+    "feel": "条带滑入、字幕逐行上滚",
+    "easing": "linear",
+    "spawn": "硬切 / 闪白",
+    "density": "低",
+    "fps": 30
+  },
+  "camera": "锁死，靠条带切换",
+  "goodFor": [
+    "快讯",
+    "要点播报",
+    "事件梳理",
+    "公告"
+  ],
+  "badFor": [
+    "抒情长文",
+    "手作",
+    "童趣"
+  ],
+  "triggers": [
+    "快讯",
+    "最新",
+    "播报",
+    "要点"
+  ],
+  "invariants": [
+    "下三分之一字幕条常驻",
+    "红色只用于条带与序号",
+    "文字左对齐不居中"
+  ],
+  "pitfalls": [
+    "字幕条遮住主画面",
+    "用花体字"
+  ],
+  "recommendedMotions": [
+    "result-first-frame",
+    "counter-roll",
+    "geometric-wipe"
+  ]
+}

@@ -1,7 +1,7 @@
 ---
 name: remotion-video-pipeline
-description: 用 Remotion 做「口播讲解型」动画短视频的完整流水线：参考视频拆解（或只给主题直接推导）→ 原创口播稿 → 配音与逐字对轴 → 观点页/解释页交替的分镜动画 → 渲染成片。支持无参考视频、只给主题开工。含开头 15 秒黄金窗口强制规范（帧级快切 + 确定性特效 + 主题画风映射）与两道必须停顿的用户确认门（选配音方式、审听音频后才做成片）。当用户要做横屏（默认）/竖屏（按需覆盖）讲解视频、知识动画、参考某条视频复刻同款风格、把一篇文章或口播稿变成带字幕和动画的 MP4、或要修改已做好的 Remotion 口播视频（删句、换录音、调节奏、重做开场）时使用。
-version: 1.8.0
+description: 用 Remotion 做「口播讲解型」动画短视频的完整流水线：参考视频拆解（或只给主题直接推导）→ 原创口播稿 → 配音与逐字对轴 → 观点页/解释页交替的分镜动画 → 渲染成片。支持无参考视频、只给主题开工。含开头 15 秒黄金窗口强制规范（帧级快切 + 确定性特效 + 60 种整片画风）与两道必须停顿的用户确认门（选配音方式、审听音频后才做成片）。当用户要做横屏（默认）/竖屏（按需覆盖）讲解视频、知识动画、参考某条视频复刻同款风格、把一篇文章或口播稿变成带字幕和动画的 MP4、或要修改已做好的 Remotion 口播视频（删句、换录音、调节奏、重做开场）时使用。支持 60 种画风与 31 个动效组件正交组合。
+version: 1.9.0
 ---
 
 # Remotion 口播讲解视频流水线
@@ -37,15 +37,15 @@ python scripts/check_env.py --mode whisper # G1 选了真人录音后复检
 
 | # | 阶段 | 关键产物 | 详情 |
 |---|---|---|---|
-| 0 | 定规格 | 时长 / 画幅（默认 **1920×1080 横屏**）/ 风格（**配音方式不在此定**） | 本文件 |
+| 0 | 定规格 | 时长 / 画幅（默认 **1920×1080 横屏**）/ **1 个整片画风**（从 `style-lib/styles/INDEX.md` 选，未指定按主题自动定，**不追问**）（**配音方式不在此定**） | 本文件 + `style-lib/STYLE-DIRECTOR.md` |
 | 1 | 配方卡（**双模式**） | 原片、抽帧、转写 + **配方卡**（风格+结构+节奏） | A 拆解 `01` / **B 只给主题 `11`** |
 | 2 | 写口播稿 + 拆句 | `analysis/口播稿-V1.md`、`口播稿-纯文本.md`、`data/scenes.json` | `references/02-script-and-lines.md` |
 | 🚪 **G1** | **交付口播稿 + 选配音方式** | **用户的一次选择：自己录 / AI 生成** | `references/09-interaction-gates.md` |
 | 3 | 配音与时间轴 | `public/voiceover.mp3`、`data/timeline.json` | `references/03-audio-timeline.md` |
 | 🚪 **G2** | **交付音轨试听 + 确认** | **用户明确确认（AI 配音强制）** | `references/09-interaction-gates.md` |
-| 4 | 分镜设计（最关键） | 每章 `XXX_SHOTS` 镜头表 + **开场帧级快切表** + **素材清单** | `references/04-shot-design.md` + `10-first-15s.md` + `motion-lib/MOTION-DIRECTOR.md` |
+| 4 | 分镜设计（最关键） | 每章 `XXX_SHOTS` 镜头表 + **开场帧级快切表** + **素材清单** + **画风 slug** | `references/04-shot-design.md` + `10-first-15s.md` + `motion-lib/MOTION-DIRECTOR.md` + `style-lib/STYLE-DIRECTOR.md` |
 | 4↔5 | 外部素材检索下载（按需） | 素材清单 → 检索/筛选/下载 → 统一画风 → 落 `public/assets/` | `references/12-asset-sourcing.md` |
-| 5 | 视觉体系搭建 | `Chrome.tsx` + 场景组件 + **主题画风 / 开场特效 / 讲解型动效** + 素材引用 | `references/05-visual-system.md` + `10-first-15s.md` + `13-motion-library.md` + `motion-lib/AGENTS.md` |
+| 5 | 视觉体系搭建 | `Chrome.tsx` + 场景组件 + **画风底板 `StyleStage` / 开场特效 / 讲解型动效** + 素材引用 | `references/05-visual-system.md` + `10-first-15s.md` + `13-motion-library.md` + `references/14-style-library.md` + `motion-lib/AGENTS.md` + `style-lib/AGENTS.md` |
 | 6 | 抽帧质检 + 渲染 | 质检截图、成片 MP4 | `references/06-qc-render.md` |
 | 7 | 改稿 | 删句/换录音/调节奏后的新成片 | `references/06-qc-render.md` §改稿 |
 
@@ -53,11 +53,11 @@ python scripts/check_env.py --mode whisper # G1 选了真人录音后复检
 
 > **G1 / G2 是阻塞门，不是建议。** 未拿到用户明确答复，不得往下走一个阶段；**尤其禁止在 G2 通过前生成任何画面或渲染 MP4**。完整提问模板、确认判据、反馈处理与反模式见 `references/09-interaction-gates.md`。
 >
-> **只打断两次**：G1 一次二选一（口播稿同时交付、改稿意见同轮吸收）、G2 一次试听确认。阶段 1 的配方卡只给用户看、不等回复；画风、特效、切几页按主题自行决定，**不要额外追问**。模式 B 的画幅/时长/配色等规格一律用 `11` §1 的默认值兜底，不追问。其余细节不要反复追问。
+> **只打断两次**：G1 一次二选一（口播稿同时交付、改稿意见同轮吸收）、G2 一次试听确认。阶段 1 的配方卡只给用户看、不等回复；**画风从 `style-lib/styles/INDEX.md` 的 60 个里按主题自动选 1 个**、特效、切几页都自行决定，**不要额外追问**。模式 B 的画幅/时长/配色等规格一律用 `11` §1 的默认值兜底，不追问。其余细节不要反复追问。
 >
 > **素材检索不是第三道门**：阶段 4↔5 的素材清单随配方卡一起给用户看（软门），下载与替换自行决定，**不等回复、不追问**；判断该不该找素材见 `12` §0。
 
-**阶段 5 与阶段 6 之间必须过两遍自检**：画面四条铁律的逐页自检卡（`references/08-screen-rules.md` 末尾）与**开头 15 秒专项自检**（`references/10-first-15s.md` §7），两项全绿再全片渲染。用了动效库的页追加三帧抽查（动作起点前 1 帧 / 后 2 帧 / 结果停稳帧，见 `13-motion-library.md` §6 / `motion-lib/MOTION-TECHNIQUE.md` §6）。
+**阶段 5 与阶段 6 之间必须过两遍自检**：画面四条铁律的逐页自检卡（`references/08-screen-rules.md` 末尾）与**开头 15 秒专项自检**（`references/10-first-15s.md` §7），两项全绿再全片渲染。用了动效库的页追加三帧抽查（动作起点前 1 帧 / 后 2 帧 / 结果停稳帧，见 `13-motion-library.md` §6 / `motion-lib/MOTION-TECHNIQUE.md` §6）。用了画风库的片追加「整片只有一个 slug / 色板字体底板统一 / 开场与正片不混搭」检查，见 `references/14-style-library.md` §6。
 
 环境与依赖：装什么、什么版本、缺了怎么补 → `references/00-dependencies.md`；Windows 平台坑、镜像源、工具位置 → `references/07-gotchas.md`。这两份每一条都是踩过的。
 
@@ -92,7 +92,7 @@ python scripts/check_env.py --mode whisper # G1 选了真人录音后复检
 
 ### 开头 15 秒（第 8 条 · 独立于正片节奏）
 
-8. **黄金 15 秒必须抢人**（最容易被当场打回的地方）。前 15s **≥6 个镜头页**、单页 ≤2.5s、首屏页 ≤1.5s、frame 0 就在动、任何元素连续静止 ≤1.5s；前 3 秒必须有数字冲击 / 反常识断言 / 悬念之一。开场是**唯一**允许 `from` 用帧号做帧级快切的地方（正片一律行索引）。画风必须**贴合主题**且与正片共用同一套色板、字体、背景色——按 `references/10-first-15s.md` §5 的主题→画风映射表选，禁止一套科技模板通吃；特效全部确定性（禁 `Math.random()`），HUD 只在开场出现、章末必须完全消失。**这一条不新增确认门**：画风与特效按阶段 1 配方卡自行决定。
+8. **黄金 15 秒必须抢人**（最容易被当场打回的地方）。前 15s **≥6 个镜头页**、单页 ≤2.5s、首屏页 ≤1.5s、frame 0 就在动、任何元素连续静止 ≤1.5s；前 3 秒必须有数字冲击 / 反常识断言 / 悬念之一。开场是**唯一**允许 `from` 用帧号做帧级快切的地方（正片一律行索引）。画风必须**贴合主题**且与正片共用同一套色板、字体、背景色——按 `references/10-first-15s.md` §5 的主题→类别映射，从 `style-lib/styles/INDEX.md` 的 60 个画风里选 **1 个 slug**，用 `StyleStage` 包住所有场景页，一整支片不换皮，禁止一套科技模板通吃；特效全部确定性（禁 `Math.random()`），HUD 只在开场出现、章末必须完全消失。**这一条不新增确认门**：画风与特效按阶段 1 配方卡自行决定。
 
 ## 工程结构（沿用即可）
 
@@ -136,6 +136,7 @@ cd <已有remotion工程> && cp -al node_modules <新工程路径>/node_modules
 | `assets/components/ShotEngine.tsx` | 镜头页引擎 `ShotSequence`：台词索引 → 当前镜头页 + 淡入上滑转场 |
 | `assets/components/Opening.tech.tsx` | **已验证横屏科技风开场**：7 页帧级快切 + 常驻 HUD；换主题改文件头色板与页表即可，见 `10-first-15s.md` §10 |
 | `motion-lib/` | **Agent 通用动效库（31 个效果）**：`AGENTS.md` 通用入口、`INDEX.md` 按触发词检索、每个效果一张 `MOTION.md` + `motion.json` + `demo.tsx`，`core/MotionKit.tsx` 是唯一代码源；`MOTION-DIRECTOR.md` 选效果、`MOTION-TECHNIQUE.md` 实现与质检、`MY-MOTIONS.md` 自定义效果。脱离本流水线也能单独用 |
+| `style-lib/` | **Agent 通用画风库（60 个画风 / 12 类）**：`AGENTS.md` 通用入口、`styles/INDEX.md` 按主题与触发词选、每个画风一张 `STYLE.md` + `style.json` + `demo.tsx`，`core/StyleKit.tsx` 是唯一渲染代码源（12 种底板族，纯 CSS 确定性）；`STYLE-DIRECTOR.md` 选画风、`STYLE-TECHNIQUE.md` 实现与质检、`MY-STYLES.md` 自定义画风。与动效库正交，也能脱离流水线单独用 |
 | `assets/components/Motion.primitives.tsx` | **旧版讲解型动效原语库**（v1.6 起）：逐项进场/扫描线/走线/数据流/打字机/数字滚动/划掉/扫入高亮/翻页/结果停稳；新工程优先用 `motion-lib/core/MotionKit.tsx`，此处保留兼容旧稿 |
 | `assets/templates/` | `Video.example.tsx`（编排层）、`Root.example.tsx`、`scenes.example.json` |
 
@@ -145,6 +146,7 @@ cd <已有remotion工程> && cp -al node_modules <新工程路径>/node_modules
 - [ ] **配方卡已产出**（A 拆解 / B 推导），来源已标注、无「待定」字段
 - [ ] **前 15s ≥6 个镜头页、单页 ≤75 帧、首屏页 ≤45 帧**；frame 0 在动、无连续 1.5s 静止（`10-first-15s.md` §1/§7）
 - [ ] **开场画风贴合主题且与正片同一套色板/字体/背景色**；`frame 450` 之后无任何 HUD 残留
+- [ ] **整片只用 1 个画风 slug**（`style-lib/styles/INDEX.md`），`StyleStage` 覆盖所有场景页；色板/字体/底板统一，开场与正片不混搭（`14-style-library.md` §6）
 - [ ] **用了讲解型动效的页**：动作绑台词锚点（`at(i)`，非拍秒数）、一页一个主动作、抽帧过「发声前 5 帧未出现 / 后 2 帧正进场 / 结果停稳」三帧（`13-motion-library.md` §6 / `motion-lib/MOTION-TECHNIQUE.md` §6）
 - [ ] **若用了外部素材**：素材清单来源/授权/落地文件无空字段、授权可追溯；素材已统一画风、用 `staticFile()` 从 `public/assets/` 引用；逐页过 `12` §7 四条铁律（非整页/有运动/卡字幕帧/不叠大段文字），音效未盖过口播
 - [ ] `ffprobe` 时长 = `timeline.durationInFrames / fps`，音轨长度对齐（差 < 0.1s）
@@ -164,4 +166,5 @@ cd <已有remotion工程> && cp -al node_modules <新工程路径>/node_modules
 - v1.6.0：新增**讲解型动效库**——从「启序AI-豆包口播导演工具箱」三期 40 条动效提示词提炼出 21 个可复用语义动作（开场钩子/文字强调/过程/操作/数据/对比/收尾七类），补上此前特效库偏重「开场装饰」、缺「讲到什么就演什么」的短板。新增 `references/13-motion-library.md`（每个模式含可复制提示词模板 + Remotion 实现 + 真人转译 + 40 条→模式映射）与 `assets/components/Motion.primitives.tsx`（11 个高频动作的代码原语，纯 Remotion API、确定性、delay 走 `at(i)`）。**真人口播 MG 转译到本 skill 能力边界**：真人出镜改声波头像/前景元素遮挡，历史秒数一律重卡 `timeline`，音效压 0.2~0.4 不盖主音轨。与 `10` 分工：`10` 管开场装饰特效，`13` 管正片语义动作，可叠加。G1/G2、只打断两次、四条铁律均不变。
 - v1.7.0：**默认画幅改为横屏 1920×1080 @30fps**（原竖屏 1080×1920 改为用户明确要求时才用）。同步更新 `11` §1 默认值、`05` 横屏安全区、`02` / `scenes.example.json` 模板、`12` 素材尺寸基准与 `10` §10 换算表；`Chrome.tsx` 改为按 `useVideoConfig()` 自动切横/竖屏坐标（横屏采用已实测成片坐标）。G1/G2、只打断两次、四条铁律与动效库均不变。同版补充 `AGENTS.md` 作为唯一通用 Agent 入口：仓库定位为「给 Agent 一个 Git 链接 + 一句需求即可开工」，frontmatter 仅工具自动发现用，正文通用。
 - v1.8.0：新增 **`motion-lib/` Agent 通用动效库**——参照 `lemomo-ai/lemo-opuscar` 的组织方式（通用入口 + 逐效果卡 + 索引 + 技术/导演指南 + 自定义目录 + 各 Agent 适配），把 `13-motion-library.md` 的 21 个语义模式与 `10` §4 的 10 个装饰特效落成 **31 张效果卡**（`MOTION.md` + `motion.json` + `demo.tsx`）与一份自包含 `core/MotionKit.tsx`（31 个组件，纯 Remotion API、确定性、delay 走 `at(i)`）。新增 `MOTION-DIRECTOR.md`（选效果/时序/密度）、`MOTION-TECHNIQUE.md`（实现契约与三帧质检）、`MY-MOTIONS.md`（自定义效果存 `~/remotion-my-motions/`）；支持 Claude Code / Cursor / Gemini CLI / GitHub Copilot / WorkBuddy 入口。G1/G2、只打断两次、画面四条铁律、默认横屏均不变。
+- v1.9.0：新增 **`style-lib/` Agent 通用画风库**——60 个原创画风按 12 类组织，每个含 `STYLE.md`（色板/字体/材质/镜头/不变量/坑）+ `style.json` + `demo.tsx`，由 `scripts/styles.json` 数据驱动生成；`core/StyleKit.tsx` 用 12 种纯 CSS 底板族把画风真正渲染出来（`<StyleStage slug>`），零新增依赖、确定性、无 `Math.random()`。画风层与 `motion-lib/` 动作层**正交**：一支片选 1 个画风 + 每章 1 个主动作，取色走 `getStyle(slug).palette.accent`，不改 MotionKit 源码。新增 `references/14-style-library.md`（选画风 / 组合 / 质检 / 自定义）、`STYLE-DIRECTOR.md`、`STYLE-TECHNIQUE.md`、`MY-STYLES.md`，并补齐 Claude Code / Cursor / Gemini CLI / GitHub Copilot / WorkBuddy 入口。**G1/G2、只打断两次、画面四条铁律、默认横屏全部不变**；画风仍由 Agent 按主题自行决定，不新增确认门。
 - 官方 Remotion skill（项目脚手架与 API 速查）：`<skill 根目录同级>/remotion-skills/skills/remotion-create`

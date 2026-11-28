@@ -1,0 +1,74 @@
+{
+  "slug": "newsreel",
+  "cn": "1920s 新闻影片",
+  "en": "1920s Newsreel",
+  "cat": "film",
+  "catCn": "胶片与纪实",
+  "catEn": "Film & Documentary",
+  "signature": "棕褐黑白、划痕抖动、大号衬线插卡字幕。",
+  "palette": {
+    "bg": "#2A241C",
+    "surface": "#3A3227",
+    "surface2": "#4C4437",
+    "text": "#EFE3C8",
+    "dim": "#968D7B",
+    "accent": "#D9B26A",
+    "accent2": "#EFE3C8",
+    "line": "#D7CCB3",
+    "problem": "#FF5C5C"
+  },
+  "fonts": {
+    "display": "Georgia, 'Songti SC', 'SimSun', serif",
+    "body": "Georgia, 'Songti SC', 'SimSun', serif",
+    "mono": "Consolas, 'JetBrains Mono', 'Courier New', monospace",
+    "weight": 500,
+    "tracking": "0.03em"
+  },
+  "stage": {
+    "type": "film",
+    "typeCn": "胶片颗粒 + 划痕 + 抖动",
+    "texture": "划痕、灰尘、帧抖动、暗角",
+    "grid": 0,
+    "glow": "#D9B26A",
+    "vignette": 0.5
+  },
+  "motion": {
+    "feel": "硬切、插卡字幕砸入、轻微抖动",
+    "easing": "linear",
+    "spawn": "硬切 / 闪白",
+    "density": "低",
+    "fps": 30
+  },
+  "camera": "锁死或缓慢摇，模拟老摄影机",
+  "goodFor": [
+    "历史回溯",
+    "年代事件",
+    "人物纪传",
+    "老照片"
+  ],
+  "badFor": [
+    "现代产品",
+    "实时数据",
+    "儿童"
+  ],
+  "triggers": [
+    "那年",
+    "当年",
+    "档案",
+    "旧闻"
+  ],
+  "invariants": [
+    "全程去色或仅棕褐",
+    "必须有可见的帧抖动",
+    "插卡字幕用衬线居中"
+  ],
+  "pitfalls": [
+    "出现现代字体",
+    "画面太干净"
+  ],
+  "recommendedMotions": [
+    "result-first-frame",
+    "counter-roll",
+    "geometric-wipe"
+  ]
+}

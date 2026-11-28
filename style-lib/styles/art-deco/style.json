@@ -1,0 +1,74 @@
+{
+  "slug": "art-deco",
+  "cn": "装饰艺术",
+  "en": "Art Deco",
+  "cat": "geometry",
+  "catCn": "几何与构成",
+  "catEn": "Geometry",
+  "signature": "黑金配色、对称扇形、放射线与细密边框。",
+  "palette": {
+    "bg": "#101014",
+    "surface": "#1B1B22",
+    "surface2": "#302F32",
+    "text": "#F2E4BE",
+    "dim": "#8C8572",
+    "accent": "#D9AE55",
+    "accent2": "#7FA6A0",
+    "line": "#D7CBAA",
+    "problem": "#FF5C5C"
+  },
+  "fonts": {
+    "display": "'Arial Black', 'Microsoft YaHei', sans-serif",
+    "body": "Inter, 'PingFang SC', 'Microsoft YaHei', sans-serif",
+    "mono": "Inter, 'PingFang SC', 'Microsoft YaHei', sans-serif",
+    "weight": 700,
+    "tracking": "-0.04em"
+  },
+  "stage": {
+    "type": "flat",
+    "typeCn": "纯色平涂 + 硬边几何",
+    "texture": "金属细线、扇形母题、对称框",
+    "grid": 0,
+    "glow": "#D9AE55",
+    "vignette": 0.16
+  },
+  "motion": {
+    "feel": "对称展开、从中心向两侧铺开",
+    "easing": "ease-out",
+    "spawn": "几何块滑动拼接",
+    "density": "中",
+    "fps": 30
+  },
+  "camera": "锁死，严格中轴",
+  "goodFor": [
+    "庆典",
+    "高端品牌",
+    "年代回顾",
+    "榜单"
+  ],
+  "badFor": [
+    "儿童",
+    "手作",
+    "数据密集"
+  ],
+  "triggers": [
+    "盛大",
+    "经典",
+    "对称",
+    "金"
+  ],
+  "invariants": [
+    "构图必须左右对称",
+    "线条极细且金色",
+    "扇形与放射线是母题"
+  ],
+  "pitfalls": [
+    "打破对称",
+    "用粗黑体"
+  ],
+  "recommendedMotions": [
+    "pulse-cells",
+    "dual-merge",
+    "result-hold"
+  ]
+}

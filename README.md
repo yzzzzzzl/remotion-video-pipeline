@@ -26,6 +26,7 @@
 - **外部素材规范**：代码画不出的真实物件/场景允许检索可商用素材，含版权判定、统一画风与落地引用规则。
 - **讲解型动效库**：21 个语义动作模式 + 可复用 Remotion 组件原语，做到「讲到什么就演什么」。
 - **Agent 通用动效库 `motion-lib/`**：31 个效果卡（中英文触发词可查）+ 一份自包含 `MotionKit.tsx`，Claude Code / Cursor / Gemini CLI / GitHub Copilot / WorkBuddy 都能直接用，也能脱离本流水线单独用。
+- **60 种整片画风 `style-lib/`**：12 类各 5 个，从深色科技发布到中国水墨、黑板粉笔、工程蓝图、像素 RPG；`StyleStage` 一个组件换皮，色板/字体/底板/材质全跟着变。与 31 个动效正交组合，一支片选 1 个画风 + 每章 1 个主动作。
 - **质检与渲染**：先静帧检查排版，再抽帧验动效，最后输出 MP4。
 
 ## Agent 从哪里开始
@@ -46,6 +47,7 @@
 - **时间基准**：字幕是唯一基准，所有时间点查 `timeline.json`，不估秒数
 - **主音轨**：`voiceover.mp3` 唯一，素材音效压 0.2~0.4
 - **阻塞门**：只有 G1 与 G2；素材检索随配方卡软交付，不是第三道门
+- **画风**：从 `style-lib/` 的 60 个里选 1 个写进配方卡，整片统一；用户未指定就按主题自动定，**不新增确认门**
 - **画面四条铁律**：元素进场而非整页、主画面只放关键词、动画绑台词锚点、静态画面挂运动
 
 ## 目录结构
@@ -63,6 +65,13 @@ remotion-video-pipeline/
 │   ├── core/MotionKit.tsx       31 个自包含组件的唯一代码源
 │   ├── effects/<slug>/          MOTION.md + motion.json + demo.tsx
 │   └── plugin/ .cursor/ .github/ 各 Agent 的自动发现入口
+├── style-lib/                  Agent 通用画风库（60 个画风，可单独使用）
+│   ├── AGENTS.md                通用入口；styles/INDEX.md 画风索引
+│   ├── STYLE-DIRECTOR.md / STYLE-TECHNIQUE.md / MY-STYLES.md
+│   ├── core/StyleKit.tsx       12 种底板族的唯一渲染代码源
+│   ├── core/style-tokens.ts    脚本生成的 60 份 token
+│   ├── styles/<slug>/          STYLE.md + style.json + demo.tsx
+│   └── plugin/ .cursor/ .github/ 各 Agent 的自动发现入口
 └── assets/
     ├── components/              可复用 Remotion 组件：Chrome / ShotEngine / Opening / Motion.primitives
     └── templates/               Video / Root / scenes.json 模板
@@ -70,4 +79,4 @@ remotion-video-pipeline/
 
 ## 版本
 
-当前版本：**v1.8.0**（默认横屏、画幅自适应底座、Agent 通用动效库 `motion-lib/`）。完整变更记录见 `SKILL.md` 末尾「参考」章节。
+当前版本：**v1.9.0**（默认横屏、画幅自适应底座、Agent 通用动效库 `motion-lib/` + 60 画风库 `style-lib/`）。完整变更记录见 `SKILL.md` 末尾「参考」章节。

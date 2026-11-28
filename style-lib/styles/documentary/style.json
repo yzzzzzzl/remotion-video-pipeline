@@ -1,0 +1,74 @@
+{
+  "slug": "documentary",
+  "cn": "暗色纪录片",
+  "en": "Dark Documentary",
+  "cat": "film",
+  "catCn": "胶片与纪实",
+  "catEn": "Film & Documentary",
+  "signature": "低饱和暗调、粗颗粒、白字幕与克制的推近。",
+  "palette": {
+    "bg": "#15181A",
+    "surface": "#22272A",
+    "surface2": "#363A3D",
+    "text": "#E8E8E4",
+    "dim": "#898A89",
+    "accent": "#C7A46B",
+    "accent2": "#7E9AA3",
+    "line": "#CFCFCC",
+    "problem": "#FF5C5C"
+  },
+  "fonts": {
+    "display": "Georgia, 'Songti SC', 'SimSun', serif",
+    "body": "Georgia, 'Songti SC', 'SimSun', serif",
+    "mono": "Consolas, 'JetBrains Mono', 'Courier New', monospace",
+    "weight": 500,
+    "tracking": "0.03em"
+  },
+  "stage": {
+    "type": "film",
+    "typeCn": "胶片颗粒 + 划痕 + 抖动",
+    "texture": "粗颗粒、暗角、轻微色偏",
+    "grid": 0,
+    "glow": "#C7A46B",
+    "vignette": 0.5
+  },
+  "motion": {
+    "feel": "几乎不动，靠剪辑推进",
+    "easing": "linear",
+    "spawn": "硬切 / 闪白",
+    "density": "低",
+    "fps": 30
+  },
+  "camera": "极慢推近或完全锁死",
+  "goodFor": [
+    "社会议题",
+    "调查",
+    "人物",
+    "历史"
+  ],
+  "badFor": [
+    "产品发布",
+    "儿童",
+    "快口播"
+  ],
+  "triggers": [
+    "调查",
+    "背后",
+    "真实",
+    "记录"
+  ],
+  "invariants": [
+    "饱和度压到很低",
+    "字幕纯白不加底色块",
+    "禁止弹跳与花哨转场"
+  ],
+  "pitfalls": [
+    "用高饱和色",
+    "加动感特效"
+  ],
+  "recommendedMotions": [
+    "result-first-frame",
+    "counter-roll",
+    "geometric-wipe"
+  ]
+}

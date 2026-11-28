@@ -1,0 +1,74 @@
+{
+  "slug": "bauhaus",
+  "cn": "包豪斯几何",
+  "en": "Bauhaus Shapes",
+  "cat": "geometry",
+  "catCn": "几何与构成",
+  "catEn": "Geometry",
+  "signature": "白底、红黄蓝三原色、圆三角方与严格对齐。",
+  "palette": {
+    "bg": "#F5F2EA",
+    "surface": "#FFFFFF",
+    "surface2": "#E8E8E8",
+    "text": "#171717",
+    "dim": "#7B7A76",
+    "accent": "#E12820",
+    "accent2": "#2B5BD7",
+    "line": "#323130",
+    "problem": "#FF5C5C"
+  },
+  "fonts": {
+    "display": "'Arial Black', 'Microsoft YaHei', sans-serif",
+    "body": "Inter, 'PingFang SC', 'Microsoft YaHei', sans-serif",
+    "mono": "Inter, 'PingFang SC', 'Microsoft YaHei', sans-serif",
+    "weight": 700,
+    "tracking": "-0.04em"
+  },
+  "stage": {
+    "type": "flat",
+    "typeCn": "纯色平涂 + 硬边几何",
+    "texture": "无纹理、平涂、硬边",
+    "grid": 0,
+    "glow": "#E12820",
+    "vignette": 0.16
+  },
+  "motion": {
+    "feel": "几何块滑动到位，无弹性",
+    "easing": "ease-out",
+    "spawn": "几何块滑动拼接",
+    "density": "中",
+    "fps": 30
+  },
+  "camera": "锁死，靠块面重组",
+  "goodFor": [
+    "分类",
+    "三要素",
+    "原理",
+    "设计基础"
+  ],
+  "badFor": [
+    "叙事长文",
+    "情绪",
+    "写实"
+  ],
+  "triggers": [
+    "三种",
+    "要素",
+    "基本",
+    "构成"
+  ],
+  "invariants": [
+    "只用圆、三角、方",
+    "只用红黄蓝加黑白",
+    "不允许旋转以外的变形"
+  ],
+  "pitfalls": [
+    "加渐变与阴影",
+    "用超过三种颜色"
+  ],
+  "recommendedMotions": [
+    "pulse-cells",
+    "dual-merge",
+    "result-hold"
+  ]
+}

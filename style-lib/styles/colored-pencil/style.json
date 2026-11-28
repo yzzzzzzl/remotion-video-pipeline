@@ -1,0 +1,74 @@
+{
+  "slug": "colored-pencil",
+  "cn": "彩铅科普",
+  "en": "Colored-pencil Science",
+  "cat": "paint",
+  "catCn": "绘画笔触",
+  "catEn": "Painting",
+  "signature": "纸白、彩铅排线、轻柔颗粒与手绘标注线。",
+  "palette": {
+    "bg": "#FBF8F0",
+    "surface": "#FFFDF7",
+    "surface2": "#EBE9E2",
+    "text": "#33302A",
+    "dim": "#8D8A83",
+    "accent": "#6E9E5E",
+    "accent2": "#D98A5B",
+    "line": "#4B4842",
+    "problem": "#FF5C5C"
+  },
+  "fonts": {
+    "display": "'Comic Sans MS', 'Kaiti SC', 'STKaiti', cursive",
+    "body": "Inter, 'PingFang SC', 'Microsoft YaHei', sans-serif",
+    "mono": "Inter, 'PingFang SC', 'Microsoft YaHei', sans-serif",
+    "weight": 400,
+    "tracking": "0.01em"
+  },
+  "stage": {
+    "type": "stroke",
+    "typeCn": "笔触纹理 + 湿边",
+    "texture": "排线笔触、纸纹、轻颗粒",
+    "grid": 0,
+    "glow": "#6E9E5E",
+    "vignette": 0.16
+  },
+  "motion": {
+    "feel": "排线逐层加深，标注最后画上",
+    "easing": "ease-in-out",
+    "spawn": "笔触晕开 / 层层叠加",
+    "density": "低",
+    "fps": 30
+  },
+  "camera": "锁死，像翻一页图谱",
+  "goodFor": [
+    "自然科普",
+    "植物动物",
+    "结构图解",
+    "教科书"
+  ],
+  "badFor": [
+    "科技界面",
+    "快节奏",
+    "暗色悬疑"
+  ],
+  "triggers": [
+    "图鉴",
+    "种类",
+    "结构",
+    "观察"
+  ],
+  "invariants": [
+    "用排线而非平涂表现明暗",
+    "标注线手绘且细",
+    "留白充足"
+  ],
+  "pitfalls": [
+    "用纯色填充",
+    "加投影"
+  ],
+  "recommendedMotions": [
+    "holo-reveal",
+    "slow-push",
+    "image-relay"
+  ]
+}

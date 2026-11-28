@@ -1,0 +1,73 @@
+{
+  "slug": "one-line",
+  "cn": "一笔画",
+  "en": "One-line Drawing",
+  "cat": "board",
+  "catCn": "板书与手绘",
+  "catEn": "Board & Hand-drawn",
+  "signature": "白底单黑线，一根不断开的线画完全部内容。",
+  "palette": {
+    "bg": "#FFFFFF",
+    "surface": "#FFFFFF",
+    "surface2": "#E7E7E7",
+    "text": "#111111",
+    "dim": "#7C7C7C",
+    "accent": "#E2453B",
+    "accent2": "#111111",
+    "line": "#2E2E2E",
+    "problem": "#FF5C5C"
+  },
+  "fonts": {
+    "display": "'Comic Sans MS', 'Kaiti SC', 'STKaiti', cursive",
+    "body": "'Comic Sans MS', 'Kaiti SC', 'STKaiti', cursive",
+    "mono": "'Comic Sans MS', 'Kaiti SC', 'STKaiti', cursive",
+    "weight": 400,
+    "tracking": "0.01em"
+  },
+  "stage": {
+    "type": "chalk",
+    "typeCn": "粉笔粉尘 + 板面擦痕",
+    "texture": "单线、无填充、无网格",
+    "grid": 0,
+    "glow": "#E2453B",
+    "vignette": 0.16
+  },
+  "motion": {
+    "feel": "线连续生长，中途不抬笔",
+    "easing": "ease-in-out",
+    "spawn": "手写逐笔长出",
+    "density": "中",
+    "fps": 30
+  },
+  "camera": "锁死，视线跟着线走",
+  "goodFor": [
+    "极简概念",
+    "关系隐喻",
+    "品牌短片",
+    "开场揭题"
+  ],
+  "badFor": [
+    "多要点清单",
+    "数据",
+    "操作演示"
+  ],
+  "triggers": [
+    "连起来",
+    "其实是一件事",
+    "从头到尾"
+  ],
+  "invariants": [
+    "整页只有一根线，不能断",
+    "不填充、不上色，除非唯一强调点",
+    "线条粗细恒定"
+  ],
+  "pitfalls": [
+    "画成多个独立小图标",
+    "加第二种颜色"
+  ],
+  "recommendedMotions": [
+    "draw-path",
+    "sweep-highlight",
+    "leader-line"
+  ]
+}

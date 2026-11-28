@@ -1,0 +1,74 @@
+{
+  "slug": "neon-tubes",
+  "cn": "霓虹灯管",
+  "en": "Neon Tubes",
+  "cat": "light",
+  "catCn": "光与线",
+  "catEn": "Light & Lines",
+  "signature": "近黑底、粉青霓虹描边、光晕扩散与暗处反光。",
+  "palette": {
+    "bg": "#0A0713",
+    "surface": "#160D24",
+    "surface2": "#2C233A",
+    "text": "#F7E9FF",
+    "dim": "#8C8395",
+    "accent": "#FF4FA3",
+    "accent2": "#3DE1FF",
+    "line": "#DBCEE3",
+    "problem": "#FF5C5C"
+  },
+  "fonts": {
+    "display": "Inter, 'PingFang SC', 'Microsoft YaHei', sans-serif",
+    "body": "Inter, 'PingFang SC', 'Microsoft YaHei', sans-serif",
+    "mono": "Consolas, 'JetBrains Mono', 'Courier New', monospace",
+    "weight": 500,
+    "tracking": "0.02em"
+  },
+  "stage": {
+    "type": "glow",
+    "typeCn": "光晕描边 + 呼吸辉光",
+    "texture": "发光描边、地面反光、柔和辉光",
+    "grid": 0,
+    "glow": "#FF4FA3",
+    "vignette": 0.5
+  },
+  "motion": {
+    "feel": "灯管逐段点亮、轻微电流闪烁",
+    "easing": "ease-out",
+    "spawn": "光线扫过 / 逐点点亮",
+    "density": "中",
+    "fps": 30
+  },
+  "camera": "锁死，靠点亮顺序推进",
+  "goodFor": [
+    "夜生活",
+    "潮流",
+    "音乐",
+    "反差开场"
+  ],
+  "badFor": [
+    "长文精读",
+    "财报",
+    "儿童"
+  ],
+  "triggers": [
+    "亮起",
+    "夜晚",
+    "闪",
+    "登场"
+  ],
+  "invariants": [
+    "光只来自描边，不铺满色块",
+    "最多两种霓虹色",
+    "暗部必须真的暗"
+  ],
+  "pitfalls": [
+    "用渐变填充文字",
+    "加第三种亮色"
+  ],
+  "recommendedMotions": [
+    "flow-dots",
+    "equalizer-bars",
+    "node-connect"
+  ]
+}

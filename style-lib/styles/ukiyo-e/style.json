@@ -1,0 +1,74 @@
+{
+  "slug": "ukiyo-e",
+  "cn": "浮世绘",
+  "en": "Ukiyo-e",
+  "cat": "paint",
+  "catCn": "绘画笔触",
+  "catEn": "Painting",
+  "signature": "靛蓝赭红、平涂色块、波浪纹与粗黑轮廓。",
+  "palette": {
+    "bg": "#E8D9B5",
+    "surface": "#F2E6C8",
+    "surface2": "#DDD3BA",
+    "text": "#1E2A38",
+    "dim": "#797970",
+    "accent": "#B4472F",
+    "accent2": "#2E5C86",
+    "line": "#363F47",
+    "problem": "#FF5C5C"
+  },
+  "fonts": {
+    "display": "'Comic Sans MS', 'Kaiti SC', 'STKaiti', cursive",
+    "body": "Inter, 'PingFang SC', 'Microsoft YaHei', sans-serif",
+    "mono": "Inter, 'PingFang SC', 'Microsoft YaHei', sans-serif",
+    "weight": 400,
+    "tracking": "0.01em"
+  },
+  "stage": {
+    "type": "stroke",
+    "typeCn": "笔触纹理 + 湿边",
+    "texture": "和纸纹、平涂、木版套色",
+    "grid": 0,
+    "glow": "#B4472F",
+    "vignette": 0.16
+  },
+  "motion": {
+    "feel": "图形整块压下，波纹重复推进",
+    "easing": "ease-in-out",
+    "spawn": "笔触晕开 / 层层叠加",
+    "density": "低",
+    "fps": 30
+  },
+  "camera": "锁死，构图偏平面",
+  "goodFor": [
+    "历史",
+    "东方故事",
+    "工艺",
+    "旅行"
+  ],
+  "badFor": [
+    "现代产品",
+    "数据大盘",
+    "极简"
+  ],
+  "triggers": [
+    "江户",
+    "浪",
+    "版印",
+    "旧时"
+  ],
+  "invariants": [
+    "不用透视与渐变",
+    "轮廓线粗且均匀",
+    "波纹是重复母题"
+  ],
+  "pitfalls": [
+    "加立体光影",
+    "用现代字体"
+  ],
+  "recommendedMotions": [
+    "holo-reveal",
+    "slow-push",
+    "image-relay"
+  ]
+}

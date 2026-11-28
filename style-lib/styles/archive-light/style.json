@@ -1,0 +1,74 @@
+{
+  "slug": "archive-light",
+  "cn": "档案看片台",
+  "en": "Archive Light Table",
+  "cat": "evidence",
+  "catCn": "地图与实证",
+  "catEn": "Maps & Evidence",
+  "signature": "暖灰台面、背光透亮的照片、编号标签与镊子式标注。",
+  "palette": {
+    "bg": "#2B2721",
+    "surface": "#3B352C",
+    "surface2": "#4E473D",
+    "text": "#F4E9D2",
+    "dim": "#9A9282",
+    "accent": "#E0B45C",
+    "accent2": "#8FA89B",
+    "line": "#DCD2BD",
+    "problem": "#FF5C5C"
+  },
+  "fonts": {
+    "display": "Inter, 'PingFang SC', 'Microsoft YaHei', sans-serif",
+    "body": "Inter, 'PingFang SC', 'Microsoft YaHei', sans-serif",
+    "mono": "Consolas, 'JetBrains Mono', 'Courier New', monospace",
+    "weight": 500,
+    "tracking": "0em"
+  },
+  "stage": {
+    "type": "lens",
+    "typeCn": "圆形视野 / 柔焦景深",
+    "texture": "背光台、相纸边框、手写编号",
+    "grid": 0,
+    "glow": "#E0B45C",
+    "vignette": 0.5
+  },
+  "motion": {
+    "feel": "照片一张张放上台、被光透亮",
+    "easing": "ease-out",
+    "spawn": "扫描线揭示 / 坐标标注",
+    "density": "中",
+    "fps": 30
+  },
+  "camera": "锁死俯视，偶尔推近一张",
+  "goodFor": [
+    "考据",
+    "老照片",
+    "证据链",
+    "档案"
+  ],
+  "badFor": [
+    "实时数据",
+    "儿童",
+    "科幻"
+  ],
+  "triggers": [
+    "档案",
+    "编号",
+    "这张",
+    "证据"
+  ],
+  "invariants": [
+    "每张照片带白边与编号",
+    "光源来自台面下方",
+    "一次只聚焦一张"
+  ],
+  "pitfalls": [
+    "照片无边框直接铺屏",
+    "加现代 UI 控件"
+  ],
+  "recommendedMotions": [
+    "scan-zones",
+    "leader-line",
+    "playhead-frames"
+  ]
+}

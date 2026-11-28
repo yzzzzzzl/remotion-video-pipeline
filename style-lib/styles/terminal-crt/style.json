@@ -1,0 +1,74 @@
+{
+  "slug": "terminal-crt",
+  "cn": "CRT 字符终端",
+  "en": "CRT Terminal",
+  "cat": "tech",
+  "catCn": "科技与界面",
+  "catEn": "Tech & Interfaces",
+  "signature": "纯黑底、磷光绿等宽字、逐行回显与游标闪烁。",
+  "palette": {
+    "bg": "#020604",
+    "surface": "#08160D",
+    "surface2": "#152D1C",
+    "text": "#8CFF9E",
+    "dim": "#4E8F59",
+    "accent": "#B6FF6B",
+    "accent2": "#FFD166",
+    "line": "#7BE18C",
+    "problem": "#FF5C5C"
+  },
+  "fonts": {
+    "display": "Inter, 'PingFang SC', 'Microsoft YaHei', sans-serif",
+    "body": "Inter, 'PingFang SC', 'Microsoft YaHei', sans-serif",
+    "mono": "Consolas, 'JetBrains Mono', 'Courier New', monospace",
+    "weight": 600,
+    "tracking": "-0.03em"
+  },
+  "stage": {
+    "type": "grid",
+    "typeCn": "细网格 + 暗角",
+    "texture": "扫描线、轻微辉光、字符栅格",
+    "grid": 48,
+    "glow": "#B6FF6B",
+    "vignette": 0.5
+  },
+  "motion": {
+    "feel": "逐字打出、无缓动、游标按拍闪",
+    "easing": "back(1.3)",
+    "spawn": "短促弹入 0.2~0.3s",
+    "density": "低",
+    "fps": 30
+  },
+  "camera": "完全锁死，只有文字在动",
+  "goodFor": [
+    "命令行",
+    "部署流程",
+    "代码讲解",
+    "工具教程"
+  ],
+  "badFor": [
+    "情感故事",
+    "数据图表",
+    "儿童内容"
+  ],
+  "triggers": [
+    "命令",
+    "运行",
+    "配置",
+    "报错"
+  ],
+  "invariants": [
+    "只用等宽字体，禁止衬线",
+    "每次只推进一行，不整屏刷新",
+    "光标闪烁可当节拍器"
+  ],
+  "pitfalls": [
+    "把终端做成彩色现代 IDE",
+    "用真实产品 logo 或界面截图"
+  ],
+  "recommendedMotions": [
+    "number-accent",
+    "ui-flow",
+    "typewriter-copy"
+  ]
+}

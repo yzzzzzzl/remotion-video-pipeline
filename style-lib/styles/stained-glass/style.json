@@ -1,0 +1,74 @@
+{
+  "slug": "stained-glass",
+  "cn": "彩色玻璃",
+  "en": "Stained Glass",
+  "cat": "craft",
+  "catCn": "纸艺与工艺",
+  "catEn": "Paper & Craft",
+  "signature": "深蓝底、彩色玻璃块、黑色铅条与透光亮边。",
+  "palette": {
+    "bg": "#0E1B3A",
+    "surface": "#172A55",
+    "surface2": "#2E3E61",
+    "text": "#FFF0C9",
+    "dim": "#939089",
+    "accent": "#E8B34A",
+    "accent2": "#4FC3E8",
+    "line": "#E2D6B8",
+    "problem": "#FF5C5C"
+  },
+  "fonts": {
+    "display": "Georgia, 'Songti SC', 'SimSun', serif",
+    "body": "Inter, 'PingFang SC', 'Microsoft YaHei', sans-serif",
+    "mono": "Inter, 'PingFang SC', 'Microsoft YaHei', sans-serif",
+    "weight": 500,
+    "tracking": "0.02em"
+  },
+  "stage": {
+    "type": "paper",
+    "typeCn": "纸纤维 + 印刷颗粒",
+    "texture": "铅条分割、玻璃透光、轻微色散",
+    "grid": 0,
+    "glow": "#E8B34A",
+    "vignette": 0.16
+  },
+  "motion": {
+    "feel": "光扫过一块，那块才亮",
+    "easing": "ease-in-out",
+    "spawn": "层叠揭开 / 光透",
+    "density": "低",
+    "fps": 30
+  },
+  "camera": "锁死，靠光照顺序推进",
+  "goodFor": [
+    "历史",
+    "宗教文化",
+    "仪式",
+    "经典重构"
+  ],
+  "badFor": [
+    "现代界面",
+    "数据",
+    "快口播"
+  ],
+  "triggers": [
+    "光",
+    "窗",
+    "年代",
+    "经典"
+  ],
+  "invariants": [
+    "所有色块必须被黑铅条分开",
+    "颜色不渐变，块内纯净",
+    "亮边只出现在受光侧"
+  ],
+  "pitfalls": [
+    "用渐变填色块",
+    "铅条太细看不出分割"
+  ],
+  "recommendedMotions": [
+    "holo-reveal",
+    "slow-push",
+    "fore-back-title"
+  ]
+}

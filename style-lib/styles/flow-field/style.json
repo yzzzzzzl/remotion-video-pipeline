@@ -1,0 +1,74 @@
+{
+  "slug": "flow-field",
+  "cn": "流场风线",
+  "en": "Flow-field Lines",
+  "cat": "light",
+  "catCn": "光与线",
+  "catEn": "Light & Lines",
+  "signature": "深蓝底、密集细流线随向量场弯曲、渐变着色。",
+  "palette": {
+    "bg": "#081426",
+    "surface": "#10223E",
+    "surface2": "#253751",
+    "text": "#E6F1FF",
+    "dim": "#828E9D",
+    "accent": "#5CC8FF",
+    "accent2": "#FF8FB1",
+    "line": "#CBD6E5",
+    "problem": "#FF5C5C"
+  },
+  "fonts": {
+    "display": "Inter, 'PingFang SC', 'Microsoft YaHei', sans-serif",
+    "body": "Inter, 'PingFang SC', 'Microsoft YaHei', sans-serif",
+    "mono": "Consolas, 'JetBrains Mono', 'Courier New', monospace",
+    "weight": 500,
+    "tracking": "0.02em"
+  },
+  "stage": {
+    "type": "glow",
+    "typeCn": "光晕描边 + 呼吸辉光",
+    "texture": "细线流场、无填充、微弱渐变",
+    "grid": 0,
+    "glow": "#5CC8FF",
+    "vignette": 0.5
+  },
+  "motion": {
+    "feel": "流线整体缓慢转向，粒子沿线漂移",
+    "easing": "ease-out",
+    "spawn": "光线扫过 / 逐点点亮",
+    "density": "中",
+    "fps": 30
+  },
+  "camera": "锁死，靠流场变化推进",
+  "goodFor": [
+    "趋势",
+    "抽象概念",
+    "数据流向",
+    "开场"
+  ],
+  "badFor": [
+    "精读文字",
+    "清单",
+    "产品界面"
+  ],
+  "triggers": [
+    "流向",
+    "趋势",
+    "汇聚",
+    "扩散"
+  ],
+  "invariants": [
+    "线条极细且密度均匀",
+    "颜色只做方向区分",
+    "不加箭头图标"
+  ],
+  "pitfalls": [
+    "线条太粗变成色块",
+    "加硬边图形"
+  ],
+  "recommendedMotions": [
+    "flow-dots",
+    "equalizer-bars",
+    "node-connect"
+  ]
+}

@@ -1,0 +1,74 @@
+{
+  "slug": "type-swiss",
+  "cn": "瑞士动态排版",
+  "en": "Swiss Motion Type",
+  "cat": "print",
+  "catCn": "印刷与编辑",
+  "catEn": "Print & Editorial",
+  "signature": "白底、红黑无衬线粗体、严格网格与大量留白。",
+  "palette": {
+    "bg": "#F4F4F2",
+    "surface": "#FFFFFF",
+    "surface2": "#E7E7E7",
+    "text": "#111111",
+    "dim": "#777776",
+    "accent": "#E1251B",
+    "accent2": "#111111",
+    "line": "#2C2C2C",
+    "problem": "#FF5C5C"
+  },
+  "fonts": {
+    "display": "Georgia, 'Songti SC', 'SimSun', serif",
+    "body": "Georgia, 'Songti SC', 'SimSun', serif",
+    "mono": "Inter, 'PingFang SC', 'Microsoft YaHei', sans-serif",
+    "weight": 700,
+    "tracking": "-0.02em"
+  },
+  "stage": {
+    "type": "paper",
+    "typeCn": "纸纤维 + 印刷颗粒",
+    "texture": "无纹理、隐形的 12 栏网格",
+    "grid": 0,
+    "glow": "#E1251B",
+    "vignette": 0.16
+  },
+  "motion": {
+    "feel": "字块滑动对齐、字号跳变、无弹性",
+    "easing": "ease-out",
+    "spawn": "整块切入 / 分栏展开",
+    "density": "低",
+    "fps": 30
+  },
+  "camera": "锁死，靠排版位移制造节奏",
+  "goodFor": [
+    "概念定义",
+    "宣言",
+    "分类",
+    "设计类内容"
+  ],
+  "badFor": [
+    "故事叙述",
+    "情绪渲染",
+    "手作质感"
+  ],
+  "triggers": [
+    "定义",
+    "第一类",
+    "原则",
+    "秩序"
+  ],
+  "invariants": [
+    "只用无衬线、左对齐、不居中",
+    "文字就是主图形，不用装饰",
+    "红色只出现一次"
+  ],
+  "pitfalls": [
+    "居中排版",
+    "加图标或插画"
+  ],
+  "recommendedMotions": [
+    "fore-back-title",
+    "result-hold",
+    "sweep-highlight"
+  ]
+}

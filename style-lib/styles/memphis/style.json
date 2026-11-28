@@ -1,0 +1,74 @@
+{
+  "slug": "memphis",
+  "cn": "孟菲斯",
+  "en": "Memphis",
+  "cat": "geometry",
+  "catCn": "几何与构成",
+  "catEn": "Geometry",
+  "signature": "米白底、撞色波点斜线、随意倾斜的几何块。",
+  "palette": {
+    "bg": "#F7F0DF",
+    "surface": "#FFFAEC",
+    "surface2": "#E8E4D7",
+    "text": "#1E1E1E",
+    "dim": "#807C75",
+    "accent": "#F04E6B",
+    "accent2": "#3FB8C4",
+    "line": "#383735",
+    "problem": "#FF5C5C"
+  },
+  "fonts": {
+    "display": "'Arial Black', 'Microsoft YaHei', sans-serif",
+    "body": "Inter, 'PingFang SC', 'Microsoft YaHei', sans-serif",
+    "mono": "Inter, 'PingFang SC', 'Microsoft YaHei', sans-serif",
+    "weight": 700,
+    "tracking": "-0.04em"
+  },
+  "stage": {
+    "type": "flat",
+    "typeCn": "纯色平涂 + 硬边几何",
+    "texture": "波点、斜线、锯齿、粗描边",
+    "grid": 0,
+    "glow": "#F04E6B",
+    "vignette": 0.16
+  },
+  "motion": {
+    "feel": "图形带轻微倾斜弹入",
+    "easing": "ease-out",
+    "spawn": "几何块滑动拼接",
+    "density": "中",
+    "fps": 30
+  },
+  "camera": "锁死，靠错位制造动感",
+  "goodFor": [
+    "潮流",
+    "创意",
+    "轻松科普",
+    "活动"
+  ],
+  "badFor": [
+    "严肃报告",
+    "古典",
+    "极简"
+  ],
+  "triggers": [
+    "混搭",
+    "跳出来",
+    "不一样",
+    "玩"
+  ],
+  "invariants": [
+    "至少三种母题同屏（点/线/块）",
+    "允许倾斜但不超过 12 度",
+    "色彩必须撞"
+  ],
+  "pitfalls": [
+    "排版太规整",
+    "只用一种颜色"
+  ],
+  "recommendedMotions": [
+    "pulse-cells",
+    "dual-merge",
+    "result-hold"
+  ]
+}

@@ -1,0 +1,74 @@
+{
+  "slug": "low-poly",
+  "cn": "低多边形等距",
+  "en": "Low-poly Isometric",
+  "cat": "dimension",
+  "catCn": "立体与材质",
+  "catEn": "3D & Material",
+  "signature": "柔和渐变底、多边形面、等距视角与干净高光。",
+  "palette": {
+    "bg": "#DCE7F0",
+    "surface": "#EDF3F8",
+    "surface2": "#D8E0E6",
+    "text": "#1E3346",
+    "dim": "#748492",
+    "accent": "#4C8FD8",
+    "accent2": "#F0A35E",
+    "line": "#35495A",
+    "problem": "#FF5C5C"
+  },
+  "fonts": {
+    "display": "Inter, 'PingFang SC', 'Microsoft YaHei', sans-serif",
+    "body": "Inter, 'PingFang SC', 'Microsoft YaHei', sans-serif",
+    "mono": "Consolas, 'JetBrains Mono', 'Courier New', monospace",
+    "weight": 600,
+    "tracking": "-0.01em"
+  },
+  "stage": {
+    "type": "toy",
+    "typeCn": "等距投影 + 立体高光",
+    "texture": "多边形切面、无纹理、软阴影",
+    "grid": 48,
+    "glow": "#4C8FD8",
+    "vignette": 0.16
+  },
+  "motion": {
+    "feel": "面逐块装配、整体轻微旋转",
+    "easing": "spring",
+    "spawn": "逐层装配 / 旋转入场",
+    "density": "中",
+    "fps": 30
+  },
+  "camera": "等距锁定，缓慢环绕 5~10 度",
+  "goodFor": [
+    "系统架构",
+    "地形",
+    "模块关系",
+    "产品结构"
+  ],
+  "badFor": [
+    "手作温度",
+    "文字长文",
+    "快切"
+  ],
+  "triggers": [
+    "模块",
+    "层面",
+    "搭建",
+    "结构"
+  ],
+  "invariants": [
+    "形体只用多边形，不用圆角",
+    "光源固定在一个方向",
+    "每个面用不同明度区分"
+  ],
+  "pitfalls": [
+    "加贴图纹理",
+    "用真实照片当背景"
+  ],
+  "recommendedMotions": [
+    "dual-merge",
+    "draw-path",
+    "node-connect"
+  ]
+}

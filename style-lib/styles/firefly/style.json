@@ -1,0 +1,74 @@
+{
+  "slug": "firefly",
+  "cn": "萤火光点",
+  "en": "Firefly Pointillism",
+  "cat": "light",
+  "catCn": "光与线",
+  "catEn": "Light & Lines",
+  "signature": "深夜蓝、暖黄光点散景、缓慢漂浮与呼吸明灭。",
+  "palette": {
+    "bg": "#0A1226",
+    "surface": "#141E38",
+    "surface2": "#2A3348",
+    "text": "#F3EEDD",
+    "dim": "#8A8B8B",
+    "accent": "#FFD37A",
+    "accent2": "#8FB8FF",
+    "line": "#D7D4C7",
+    "problem": "#FF5C5C"
+  },
+  "fonts": {
+    "display": "Inter, 'PingFang SC', 'Microsoft YaHei', sans-serif",
+    "body": "Inter, 'PingFang SC', 'Microsoft YaHei', sans-serif",
+    "mono": "Consolas, 'JetBrains Mono', 'Courier New', monospace",
+    "weight": 500,
+    "tracking": "0.02em"
+  },
+  "stage": {
+    "type": "glow",
+    "typeCn": "光晕描边 + 呼吸辉光",
+    "texture": "散景光斑、柔焦、颗粒",
+    "grid": 0,
+    "glow": "#FFD37A",
+    "vignette": 0.5
+  },
+  "motion": {
+    "feel": "光点按确定性正弦呼吸，缓慢漂移",
+    "easing": "ease-out",
+    "spawn": "光线扫过 / 逐点点亮",
+    "density": "中",
+    "fps": 30
+  },
+  "camera": "锁死，几乎不动",
+  "goodFor": [
+    "氛围开场",
+    "回忆",
+    "慢叙事",
+    "结尾"
+  ],
+  "badFor": [
+    "数据密集",
+    "操作步骤",
+    "快口播"
+  ],
+  "triggers": [
+    "夜里",
+    "一点一点",
+    "慢慢",
+    "微光"
+  ],
+  "invariants": [
+    "光点用确定性正弦，禁随机",
+    "背景必须足够暗",
+    "文字压在最上层且清晰"
+  ],
+  "pitfalls": [
+    "用 Math.random 撒点",
+    "光点亮到盖住文字"
+  ],
+  "recommendedMotions": [
+    "flow-dots",
+    "equalizer-bars",
+    "node-connect"
+  ]
+}

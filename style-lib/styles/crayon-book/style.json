@@ -1,0 +1,74 @@
+{
+  "slug": "crayon-book",
+  "cn": "蜡笔绘本",
+  "en": "Crayon Picture Book",
+  "cat": "paint",
+  "catCn": "绘画笔触",
+  "catEn": "Painting",
+  "signature": "米黄纸、粗蜡笔线条、童趣比例与不匀涂色。",
+  "palette": {
+    "bg": "#FBF1D8",
+    "surface": "#FFF8E6",
+    "surface2": "#EBE4D2",
+    "text": "#3A2E22",
+    "dim": "#918674",
+    "accent": "#E2643C",
+    "accent2": "#5AA0A8",
+    "line": "#514538",
+    "problem": "#FF5C5C"
+  },
+  "fonts": {
+    "display": "'Comic Sans MS', 'Kaiti SC', 'STKaiti', cursive",
+    "body": "Inter, 'PingFang SC', 'Microsoft YaHei', sans-serif",
+    "mono": "Inter, 'PingFang SC', 'Microsoft YaHei', sans-serif",
+    "weight": 400,
+    "tracking": "0.01em"
+  },
+  "stage": {
+    "type": "stroke",
+    "typeCn": "笔触纹理 + 湿边",
+    "texture": "蜡笔颗粒、涂出线外、纸纹",
+    "grid": 0,
+    "glow": "#E2643C",
+    "vignette": 0.16
+  },
+  "motion": {
+    "feel": "一笔一顿地涂，形状慢慢出现",
+    "easing": "ease-in-out",
+    "spawn": "笔触晕开 / 层层叠加",
+    "density": "低",
+    "fps": 30
+  },
+  "camera": "锁死，像翻绘本",
+  "goodFor": [
+    "儿童",
+    "入门概念",
+    "寓言",
+    "家庭"
+  ],
+  "badFor": [
+    "财报",
+    "硬核科技",
+    "正式通报"
+  ],
+  "triggers": [
+    "小朋友",
+    "画一个",
+    "涂色",
+    "故事"
+  ],
+  "invariants": [
+    "允许涂出边界，不要修正",
+    "形体圆润无尖角",
+    "字也要手写感"
+  ],
+  "pitfalls": [
+    "用规整矢量图形",
+    "用细线描边"
+  ],
+  "recommendedMotions": [
+    "holo-reveal",
+    "slow-push",
+    "image-relay"
+  ]
+}

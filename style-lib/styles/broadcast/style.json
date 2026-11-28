@@ -1,0 +1,74 @@
+{
+  "slug": "broadcast",
+  "cn": "电视新闻包装",
+  "en": "Broadcast Package",
+  "cat": "film",
+  "catCn": "胶片与纪实",
+  "catEn": "Film & Documentary",
+  "signature": "深蓝金配色、台标条、下三分之一与转场星芒。",
+  "palette": {
+    "bg": "#0A1C3C",
+    "surface": "#12305C",
+    "surface2": "#2A456C",
+    "text": "#FFFFFF",
+    "dim": "#9199A7",
+    "accent": "#E8B94A",
+    "accent2": "#D63A34",
+    "line": "#E2E4E8",
+    "problem": "#FF5C5C"
+  },
+  "fonts": {
+    "display": "Georgia, 'Songti SC', 'SimSun', serif",
+    "body": "Georgia, 'Songti SC', 'SimSun', serif",
+    "mono": "Consolas, 'JetBrains Mono', 'Courier New', monospace",
+    "weight": 500,
+    "tracking": "0.03em"
+  },
+  "stage": {
+    "type": "film",
+    "typeCn": "胶片颗粒 + 划痕 + 抖动",
+    "texture": "细斜纹、星芒扫光、金属质感边",
+    "grid": 0,
+    "glow": "#E8B94A",
+    "vignette": 0.5
+  },
+  "motion": {
+    "feel": "条带扫入、图形对齐、硬切",
+    "easing": "linear",
+    "spawn": "硬切 / 闪白",
+    "density": "低",
+    "fps": 30
+  },
+  "camera": "锁死，靠包装元素切换",
+  "goodFor": [
+    "年度盘点",
+    "发布会",
+    "榜单",
+    "正式通报"
+  ],
+  "badFor": [
+    "私密叙事",
+    "手作",
+    "极简"
+  ],
+  "triggers": [
+    "年度",
+    "榜单",
+    "正式",
+    "发布"
+  ],
+  "invariants": [
+    "金色只用于边框与序号",
+    "下三分之一信息不超两行",
+    "转场用扫光不用淡入淡出"
+  ],
+  "pitfalls": [
+    "加太多层光效",
+    "用圆润卡通字体"
+  ],
+  "recommendedMotions": [
+    "result-first-frame",
+    "counter-roll",
+    "geometric-wipe"
+  ]
+}

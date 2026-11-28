@@ -1,0 +1,18 @@
+---
+description: Remotion 讲解视频画风库：按主题选 1 个画风、StyleStage 换皮、与动效库正交组合、抽帧质检、自定义画风
+globs: ["**/*.tsx", "**/*.json", "**/scenes.json", "**/timeline.json"]
+alwaysApply: false
+---
+
+# Remotion Style Library
+
+本工作区含一套 agent 通用画风库（60 个画风 / 12 类）。涉及视频整体视觉风格时，先读仓库根目录 `AGENTS.md`（若本规则被复制到别处，读随库附带的 `AGENTS.md`），再按以下顺序：
+
+1. 未选画风 → 读 `styles/INDEX.md`，按主题与触发词挑 **1 个 slug**，写进配方卡；用户没指定就自动定，**不追问**。
+2. 已选画风 → 读 `styles/<slug>/STYLE.md`，确认色板、字体、底板族、不变量、坑。
+3. 写代码 → 从 `core/StyleKit.tsx` + `core/style-tokens.ts` 拷组件；`<StyleStage slug="...">` 包住整片；取色用 `getStyle(slug).palette.accent`。
+4. **两层正交**：画风管长什么样，动效管怎么动；不改 `MotionKit.tsx`；`delay` 一律 `at(i)`；禁 `Math.random()`；不新增 npm 依赖、不加载外部字体/图片。
+5. 质检 → 三帧抽查 + 「全片只有一个 slug / 开场与正片同画风 / 字幕条可读」。
+6. 自定义 → 按 `MY-STYLES.md` 存到 `~/remotion-my-styles/<slug>/`，跑 `python scripts/build_styles.py` 重建索引。
+
+一整支片只用 1 个画风，不要每页换皮；G1/G2 仍是仅有的两道确认门。

@@ -1,0 +1,74 @@
+{
+  "slug": "impasto",
+  "cn": "油画厚涂",
+  "en": "Impasto Oil Painting",
+  "cat": "paint",
+  "catCn": "绘画笔触",
+  "catEn": "Painting",
+  "signature": "深底、厚重笔触堆叠、高饱和色与可见笔痕。",
+  "palette": {
+    "bg": "#1E1A18",
+    "surface": "#2C2622",
+    "surface2": "#403A34",
+    "text": "#F5E9D6",
+    "dim": "#948C80",
+    "accent": "#E8A33D",
+    "accent2": "#4E7FA8",
+    "line": "#DBD0BF",
+    "problem": "#FF5C5C"
+  },
+  "fonts": {
+    "display": "'Comic Sans MS', 'Kaiti SC', 'STKaiti', cursive",
+    "body": "Inter, 'PingFang SC', 'Microsoft YaHei', sans-serif",
+    "mono": "Inter, 'PingFang SC', 'Microsoft YaHei', sans-serif",
+    "weight": 400,
+    "tracking": "0.01em"
+  },
+  "stage": {
+    "type": "stroke",
+    "typeCn": "笔触纹理 + 湿边",
+    "texture": "厚涂肌理、笔触方向、光泽",
+    "grid": 0,
+    "glow": "#E8A33D",
+    "vignette": 0.16
+  },
+  "motion": {
+    "feel": "笔触一笔笔压上去，不缓动",
+    "easing": "ease-in-out",
+    "spawn": "笔触晕开 / 层层叠加",
+    "density": "低",
+    "fps": 30
+  },
+  "camera": "锁死，靠笔触累积",
+  "goodFor": [
+    "艺术",
+    "人物情绪",
+    "史诗感",
+    "品牌片"
+  ],
+  "badFor": [
+    "数据",
+    "清单",
+    "工具教程"
+  ],
+  "triggers": [
+    "厚重",
+    "一笔",
+    "色彩",
+    "质感"
+  ],
+  "invariants": [
+    "笔触方向可见且一致",
+    "颜色不渐变，靠并置",
+    "背景保持深色"
+  ],
+  "pitfalls": [
+    "用平滑渐变",
+    "把笔触做成滤镜"
+  ],
+  "recommendedMotions": [
+    "holo-reveal",
+    "slow-push",
+    "image-relay"
+  ]
+}

@@ -1,0 +1,74 @@
+{
+  "slug": "whiteboard",
+  "cn": "白板讲解",
+  "en": "Whiteboard Explainer",
+  "cat": "board",
+  "catCn": "板书与手绘",
+  "catEn": "Board & Hand-drawn",
+  "signature": "白板白底、三色马克笔、箭头与便签，清爽教学感。",
+  "palette": {
+    "bg": "#FAFBF9",
+    "surface": "#FFFFFF",
+    "surface2": "#E8EAEA",
+    "text": "#1E2A32",
+    "dim": "#81888C",
+    "accent": "#1E6FE0",
+    "accent2": "#E8543F",
+    "line": "#38434A",
+    "problem": "#FF5C5C"
+  },
+  "fonts": {
+    "display": "'Comic Sans MS', 'Kaiti SC', 'STKaiti', cursive",
+    "body": "'Comic Sans MS', 'Kaiti SC', 'STKaiti', cursive",
+    "mono": "'Comic Sans MS', 'Kaiti SC', 'STKaiti', cursive",
+    "weight": 400,
+    "tracking": "0.01em"
+  },
+  "stage": {
+    "type": "chalk",
+    "typeCn": "粉笔粉尘 + 板面擦痕",
+    "texture": "轻微板面反光、粗笔触、便签纸",
+    "grid": 0,
+    "glow": "#1E6FE0",
+    "vignette": 0.16
+  },
+  "motion": {
+    "feel": "画出箭头 → 贴便签 → 连线收束",
+    "easing": "ease-in-out",
+    "spawn": "手写逐笔长出",
+    "density": "中",
+    "fps": 30
+  },
+  "camera": "锁死白板，偶尔推近一处",
+  "goodFor": [
+    "流程讲解",
+    "方法论",
+    "培训",
+    "头脑风暴"
+  ],
+  "badFor": [
+    "历史纪录片",
+    "奢华品牌",
+    "暗色科幻"
+  ],
+  "triggers": [
+    "步骤",
+    "分为",
+    "关系",
+    "先看"
+  ],
+  "invariants": [
+    "最多三种笔色",
+    "箭头必须手绘感、不用直角折线",
+    "便签只贴关键结论"
+  ],
+  "pitfalls": [
+    "用太多颜色变成涂鸦",
+    "文字排版过于工整失去板书感"
+  ],
+  "recommendedMotions": [
+    "draw-path",
+    "sweep-highlight",
+    "leader-line"
+  ]
+}

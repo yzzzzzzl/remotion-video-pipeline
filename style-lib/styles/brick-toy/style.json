@@ -1,0 +1,74 @@
+{
+  "slug": "brick-toy",
+  "cn": "积木玩具",
+  "en": "Brick Toy",
+  "cat": "dimension",
+  "catCn": "立体与材质",
+  "catEn": "3D & Material",
+  "signature": "亮黄底、原色积木、可见凸点与拼装过程。",
+  "palette": {
+    "bg": "#F7D64B",
+    "surface": "#FFF0A8",
+    "surface2": "#EADC9A",
+    "text": "#2A2418",
+    "dim": "#86742F",
+    "accent": "#E23B32",
+    "accent2": "#2E6FD8",
+    "line": "#43391E",
+    "problem": "#FF5C5C"
+  },
+  "fonts": {
+    "display": "Inter, 'PingFang SC', 'Microsoft YaHei', sans-serif",
+    "body": "Inter, 'PingFang SC', 'Microsoft YaHei', sans-serif",
+    "mono": "Consolas, 'JetBrains Mono', 'Courier New', monospace",
+    "weight": 600,
+    "tracking": "-0.01em"
+  },
+  "stage": {
+    "type": "toy",
+    "typeCn": "等距投影 + 立体高光",
+    "texture": "塑料高光、圆柱凸点、硬边阴影",
+    "grid": 48,
+    "glow": "#E23B32",
+    "vignette": 0.16
+  },
+  "motion": {
+    "feel": "一块块扣上去、咔哒停住",
+    "easing": "spring",
+    "spawn": "逐层装配 / 旋转入场",
+    "density": "中",
+    "fps": 30
+  },
+  "camera": "略高俯视，锁死",
+  "goodFor": [
+    "儿童科普",
+    "拼装步骤",
+    "模块化",
+    "趣味清单"
+  ],
+  "badFor": [
+    "严肃财经",
+    "人文纪录",
+    "极简"
+  ],
+  "triggers": [
+    "拼起来",
+    "一块",
+    "加上",
+    "搭好"
+  ],
+  "invariants": [
+    "每个块顶面必须有凸点",
+    "只用原色红黄蓝绿",
+    "组装顺序清晰可见"
+  ],
+  "pitfalls": [
+    "把凸点画成平面圆",
+    "用柔和渐变"
+  ],
+  "recommendedMotions": [
+    "dual-merge",
+    "draw-path",
+    "node-connect"
+  ]
+}

@@ -1,0 +1,74 @@
+{
+  "slug": "spreadsheet-film",
+  "cn": "表格动画",
+  "en": "Spreadsheet Film",
+  "cat": "tech",
+  "catCn": "科技与界面",
+  "catEn": "Tech & Interfaces",
+  "signature": "白底绿格线、单元格逐个填值、等号与公式可见。",
+  "palette": {
+    "bg": "#FFFFFF",
+    "surface": "#F4F8F5",
+    "surface2": "#DEE4E0",
+    "text": "#1D2B24",
+    "dim": "#838A87",
+    "accent": "#1E9E62",
+    "accent2": "#E2603F",
+    "line": "#38443E",
+    "problem": "#FF5C5C"
+  },
+  "fonts": {
+    "display": "Inter, 'PingFang SC', 'Microsoft YaHei', sans-serif",
+    "body": "Inter, 'PingFang SC', 'Microsoft YaHei', sans-serif",
+    "mono": "Consolas, 'JetBrains Mono', 'Courier New', monospace",
+    "weight": 600,
+    "tracking": "-0.03em"
+  },
+  "stage": {
+    "type": "grid",
+    "typeCn": "细网格 + 暗角",
+    "texture": "细格线、选中框、行号列标",
+    "grid": 48,
+    "glow": "#1E9E62",
+    "vignette": 0.5
+  },
+  "motion": {
+    "feel": "逐格填值、公式结果弹出、整列高亮",
+    "easing": "back(1.3)",
+    "spawn": "短促弹入 0.2~0.3s",
+    "density": "低",
+    "fps": 30
+  },
+  "camera": "锁死俯视，镜头只在列间缓慢平移",
+  "goodFor": [
+    "预算",
+    "统计口径",
+    "排期",
+    "对账"
+  ],
+  "badFor": [
+    "抒情内容",
+    "动作场面",
+    "抽象概念"
+  ],
+  "triggers": [
+    "表格",
+    "合计",
+    "公式",
+    "逐项"
+  ],
+  "invariants": [
+    "数字一律右对齐、等宽",
+    "选中框用强调色且只有一个",
+    "公式先出现，结果后落"
+  ],
+  "pitfalls": [
+    "把表格画成图片而非可动单元格",
+    "绿色格线太亮抢走数字"
+  ],
+  "recommendedMotions": [
+    "number-accent",
+    "ui-flow",
+    "typewriter-copy"
+  ]
+}

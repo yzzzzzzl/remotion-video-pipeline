@@ -1,0 +1,74 @@
+{
+  "slug": "oscilloscope",
+  "cn": "示波器",
+  "en": "Oscilloscope",
+  "cat": "light",
+  "catCn": "光与线",
+  "catEn": "Light & Lines",
+  "signature": "黑底亮绿波形、细网格与余辉拖尾。",
+  "palette": {
+    "bg": "#030B06",
+    "surface": "#0A1B10",
+    "surface2": "#1A3222",
+    "text": "#A8FFC0",
+    "dim": "#5E916C",
+    "accent": "#4DFF88",
+    "accent2": "#FFD166",
+    "line": "#94E2AA",
+    "problem": "#FF5C5C"
+  },
+  "fonts": {
+    "display": "Inter, 'PingFang SC', 'Microsoft YaHei', sans-serif",
+    "body": "Inter, 'PingFang SC', 'Microsoft YaHei', sans-serif",
+    "mono": "Consolas, 'JetBrains Mono', 'Courier New', monospace",
+    "weight": 500,
+    "tracking": "0.02em"
+  },
+  "stage": {
+    "type": "glow",
+    "typeCn": "光晕描边 + 呼吸辉光",
+    "texture": "示波网格、余辉、轻微辉光",
+    "grid": 0,
+    "glow": "#4DFF88",
+    "vignette": 0.5
+  },
+  "motion": {
+    "feel": "波形按拍刷新，余辉缓慢衰减",
+    "easing": "ease-out",
+    "spawn": "光线扫过 / 逐点点亮",
+    "density": "中",
+    "fps": 30
+  },
+  "camera": "锁死，不运镜",
+  "goodFor": [
+    "音频讲解",
+    "信号",
+    "节奏",
+    "周期"
+  ],
+  "badFor": [
+    "长文",
+    "人物",
+    "印刷"
+  ],
+  "triggers": [
+    "波形",
+    "频率",
+    "周期",
+    "信号"
+  ],
+  "invariants": [
+    "波形用单根亮线",
+    "网格保持低亮度",
+    "余辉可见但不糊"
+  ],
+  "pitfalls": [
+    "画多条彩色波形",
+    "把网格调太亮"
+  ],
+  "recommendedMotions": [
+    "flow-dots",
+    "equalizer-bars",
+    "node-connect"
+  ]
+}

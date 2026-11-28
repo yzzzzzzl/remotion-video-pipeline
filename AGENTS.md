@@ -24,11 +24,14 @@
 | 外部素材检索与版权 | `12-asset-sourcing.md` |
 | 讲解型动效库（21 个模式） | `13-motion-library.md` |
 | **Agent 通用动效库（31 个效果 + 代码）** | `motion-lib/AGENTS.md` → `motion-lib/INDEX.md` → `motion-lib/core/README.md` |
+| **画风（60 选 1，整片统一）** | `style-lib/AGENTS.md` → `style-lib/styles/INDEX.md` → `style-lib/core/README.md` |
+| 画风与动效如何组合 / 质检 | `references/14-style-library.md` |
 
 ## 默认规格
 
 - **画幅**：1920×1080 @30fps 横屏；用户明确要求抖音/小红书竖屏时才改 1080×1920，换算见 `10-first-15s.md` §10。
 - **产物**：`voiceover.mp3` + `timeline.json` + Remotion 工程 + MP4。
+- **画风**：从 `style-lib/styles/INDEX.md` 的 60 个画风里选 **1 个 slug** 写进配方卡；用户未指定则按主题自动定，**不追问**。整片不换皮，开场与正片同画风。
 - **时间基准**：字幕是唯一基准，所有时间点从 `timeline.json` 查，禁止估秒数。
 - **主音轨**：`voiceover.mp3` 唯一；素材音效压 0.2~0.4，不能盖过口播。
 
@@ -39,6 +42,7 @@
 - **画面四条铁律**：进场单位是元素不是整页；主画面只放关键词，完整句子只进字幕条；动画锚点绑台词行索引 `at(i)`；静态元素停留 >3s 必须挂运动。
 - **开头 15 秒**：≥6 个镜头页、单页 ≤2.5s、首屏 ≤1.5s、frame 0 就在动；特效确定性，禁用 `Math.random()`；HUD 只在开场、450 帧后必须消失。
 - **先定版再动画**：新页面先渲静帧看排版，不溢出再上动效，别直接全片渲染试错。
+- **两层正交**：`style-lib/` 管「整片长什么样」（色板/字体/底板），`motion-lib/` 管「元素怎么动」（触发词/`at(i)`）。一支片 1 个画风 + 每章 1 个主动作；取色用 `getStyle(slug).palette.accent` 传给动效组件，**不改 MotionKit 源码**。
 
 ## 可直接用的工具与资产
 
@@ -48,6 +52,7 @@
 - `assets/components/`：`Chrome.tsx`（画幅自适应底座）、`ShotEngine.tsx`（镜头页引擎）、`Opening.tech.tsx`（已验证横屏开场）、`Motion.primitives.tsx`（旧版讲解型动效原语）
 - `assets/templates/`：`Video.tsx` / `Root.tsx` / `scenes.json` 模板
 - `motion-lib/`：**Agent 通用动效库（31 个效果）**——`AGENTS.md` 通用入口、`INDEX.md` 按触发词检索、每个效果一张卡 + demo；`core/MotionKit.tsx` 是首选代码源，`MOTION-DIRECTOR.md` 选效果、`MOTION-TECHNIQUE.md` 质检、`MY-MOTIONS.md` 自定义效果。脱离本流水线也能单独用
+- `style-lib/`：**Agent 通用画风库（60 个画风 / 12 类）**——`AGENTS.md` 通用入口、`styles/INDEX.md` 按主题与触发词选、每个画风一张 `STYLE.md` + `style.json` + `demo.tsx`；`core/StyleKit.tsx` 是唯一渲染代码源（12 种底板族、纯 CSS、零新增依赖）。`STYLE-DIRECTOR.md` 选画风、`STYLE-TECHNIQUE.md` 质检、`MY-STYLES.md` 自定义画风。与动效库正交
 
 ## 工作目录约定
 

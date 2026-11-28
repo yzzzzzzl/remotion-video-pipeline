@@ -1,0 +1,74 @@
+{
+  "slug": "isometric",
+  "cn": "等距信息图",
+  "en": "Isometric Infographic",
+  "cat": "dimension",
+  "catCn": "立体与材质",
+  "catEn": "3D & Material",
+  "signature": "浅灰底、30 度等距网格、蓝橙模块与引线标注。",
+  "palette": {
+    "bg": "#F1F4F7",
+    "surface": "#FFFFFF",
+    "surface2": "#E9EAEC",
+    "text": "#20303F",
+    "dim": "#7E8892",
+    "accent": "#2F7BD9",
+    "accent2": "#EE8A45",
+    "line": "#394855",
+    "problem": "#FF5C5C"
+  },
+  "fonts": {
+    "display": "Inter, 'PingFang SC', 'Microsoft YaHei', sans-serif",
+    "body": "Inter, 'PingFang SC', 'Microsoft YaHei', sans-serif",
+    "mono": "Consolas, 'JetBrains Mono', 'Courier New', monospace",
+    "weight": 600,
+    "tracking": "-0.01em"
+  },
+  "stage": {
+    "type": "toy",
+    "typeCn": "等距投影 + 立体高光",
+    "texture": "等距网格、投影、细引线",
+    "grid": 48,
+    "glow": "#2F7BD9",
+    "vignette": 0.16
+  },
+  "motion": {
+    "feel": "模块逐层升起、标注后落",
+    "easing": "spring",
+    "spawn": "逐层装配 / 旋转入场",
+    "density": "中",
+    "fps": 30
+  },
+  "camera": "等距锁定，只做轻微推近",
+  "goodFor": [
+    "流程拆解",
+    "组织架构",
+    "步骤说明",
+    "空间关系"
+  ],
+  "badFor": [
+    "抒情",
+    "暗色悬疑",
+    "纯文字"
+  ],
+  "triggers": [
+    "层级",
+    "搭建",
+    "从上到下",
+    "分区"
+  ],
+  "invariants": [
+    "所有竖线严格垂直、斜线 30 度",
+    "标注必须带引线",
+    "一次只升一层"
+  ],
+  "pitfalls": [
+    "混用透视与等距",
+    "引线交叉"
+  ],
+  "recommendedMotions": [
+    "dual-merge",
+    "draw-path",
+    "node-connect"
+  ]
+}

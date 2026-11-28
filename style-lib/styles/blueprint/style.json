@@ -1,0 +1,74 @@
+{
+  "slug": "blueprint",
+  "cn": "工程蓝图",
+  "en": "Blueprint",
+  "cat": "data",
+  "catCn": "数据与图表",
+  "catEn": "Data & Charts",
+  "signature": "蓝图蓝底、白色细线、尺寸标注与剖面编号。",
+  "palette": {
+    "bg": "#12395C",
+    "surface": "#1B4A70",
+    "surface2": "#305B7E",
+    "text": "#EAF4FF",
+    "dim": "#89A0B6",
+    "accent": "#FFD166",
+    "accent2": "#7FE3FF",
+    "line": "#D0DEEB",
+    "problem": "#FF5C5C"
+  },
+  "fonts": {
+    "display": "Inter, 'PingFang SC', 'Microsoft YaHei', sans-serif",
+    "body": "Inter, 'PingFang SC', 'Microsoft YaHei', sans-serif",
+    "mono": "Consolas, 'JetBrains Mono', 'Courier New', monospace",
+    "weight": 500,
+    "tracking": "0em"
+  },
+  "stage": {
+    "type": "grid",
+    "typeCn": "细网格 + 暗角",
+    "texture": "白色 1px 网格、虚线参考线、箭头标注",
+    "grid": 48,
+    "glow": "#FFD166",
+    "vignette": 0.5
+  },
+  "motion": {
+    "feel": "线一段段长出、标注最后落位",
+    "easing": "ease-out",
+    "spawn": "数值滚动 / 轴线生长",
+    "density": "中",
+    "fps": 30
+  },
+  "camera": "缓慢平移看完整张图，再推近细节",
+  "goodFor": [
+    "结构拆解",
+    "工程原理",
+    "流程规范",
+    "产品构造"
+  ],
+  "badFor": [
+    "情绪故事",
+    "美食",
+    "快速口播"
+  ],
+  "triggers": [
+    "结构",
+    "尺寸",
+    "剖面",
+    "连接"
+  ],
+  "invariants": [
+    "所有线条等粗且为白色",
+    "标注文字必须带引出线",
+    "强调色只用于关键尺寸"
+  ],
+  "pitfalls": [
+    "给蓝图加渐变或阴影",
+    "把背景换成白色"
+  ],
+  "recommendedMotions": [
+    "context-then-value",
+    "checklist-trend",
+    "flow-dots"
+  ]
+}

@@ -1,0 +1,74 @@
+{
+  "slug": "cel-anime",
+  "cn": "80s 赛璐璐动画",
+  "en": "80s Cel Anime",
+  "cat": "cartoon",
+  "catCn": "卡通与动画",
+  "catEn": "Cartoons",
+  "signature": "高饱和蓝紫、硬边阴影、速度线与夸张透视。",
+  "palette": {
+    "bg": "#1B1A4A",
+    "surface": "#2B2A68",
+    "surface2": "#403E75",
+    "text": "#FFF4E6",
+    "dim": "#9892A0",
+    "accent": "#FF5C8A",
+    "accent2": "#4DE0FF",
+    "line": "#E4DAD3",
+    "problem": "#FF5C5C"
+  },
+  "fonts": {
+    "display": "'Arial Black', 'Microsoft YaHei', sans-serif",
+    "body": "Inter, 'PingFang SC', 'Microsoft YaHei', sans-serif",
+    "mono": "Inter, 'PingFang SC', 'Microsoft YaHei', sans-serif",
+    "weight": 700,
+    "tracking": "0em"
+  },
+  "stage": {
+    "type": "flat",
+    "typeCn": "纯色平涂 + 硬边几何",
+    "texture": "平涂色块、硬边高光、速度线",
+    "grid": 0,
+    "glow": "#FF5C8A",
+    "vignette": 0.16
+  },
+  "motion": {
+    "feel": "弹性极大、挤压拉伸、一拍到位",
+    "easing": "back(1.6)",
+    "spawn": "弹跳 + 挤压拉伸",
+    "density": "高",
+    "fps": 30
+  },
+  "camera": "夸张推拉 + 快速摇镜",
+  "goodFor": [
+    "热血科普",
+    "回忆杀",
+    "轻科幻",
+    "趣味讲解"
+  ],
+  "badFor": [
+    "严肃财报",
+    "法律条文",
+    "极简风格"
+  ],
+  "triggers": [
+    "冲",
+    "爆发",
+    "瞬间",
+    "变身"
+  ],
+  "invariants": [
+    "阴影是硬边块面，不是渐变",
+    "每个动作都要有预备帧",
+    "高光只用纯白"
+  ],
+  "pitfalls": [
+    "用柔和渐变阴影",
+    "动作没有预备和跟随"
+  ],
+  "recommendedMotions": [
+    "pulse-cells",
+    "drag-relink",
+    "geometric-wipe"
+  ]
+}

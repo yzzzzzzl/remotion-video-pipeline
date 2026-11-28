@@ -1,0 +1,73 @@
+{
+  "slug": "rubber-hose",
+  "cn": "橡皮管卡通",
+  "en": "Rubber Hose Cartoon",
+  "cat": "cartoon",
+  "catCn": "卡通与动画",
+  "catEn": "Cartoons",
+  "signature": "黑白底、圆管四肢、抖动轮廓线与米老鼠式弹性。",
+  "palette": {
+    "bg": "#F2EFE3",
+    "surface": "#FFFCF0",
+    "surface2": "#E7E4DA",
+    "text": "#111111",
+    "dim": "#767570",
+    "accent": "#E03B2F",
+    "accent2": "#111111",
+    "line": "#2C2C2A",
+    "problem": "#FF5C5C"
+  },
+  "fonts": {
+    "display": "'Arial Black', 'Microsoft YaHei', sans-serif",
+    "body": "Inter, 'PingFang SC', 'Microsoft YaHei', sans-serif",
+    "mono": "Inter, 'PingFang SC', 'Microsoft YaHei', sans-serif",
+    "weight": 700,
+    "tracking": "0em"
+  },
+  "stage": {
+    "type": "flat",
+    "typeCn": "纯色平涂 + 硬边几何",
+    "texture": "手绘抖动线、圆形关节、胶片颗粒",
+    "grid": 0,
+    "glow": "#E03B2F",
+    "vignette": 0.16
+  },
+  "motion": {
+    "feel": "橡皮管式弯曲、弹跳、持续微抖",
+    "easing": "back(1.6)",
+    "spawn": "弹跳 + 挤压拉伸",
+    "density": "高",
+    "fps": 30
+  },
+  "camera": "锁死，靠角色动作推进",
+  "goodFor": [
+    "复古趣味",
+    "轻科普",
+    "品牌短片",
+    "开场"
+  ],
+  "badFor": [
+    "现代产品",
+    "数据",
+    "严肃叙事"
+  ],
+  "triggers": [
+    "老片子",
+    "弹起来",
+    "转个圈"
+  ],
+  "invariants": [
+    "轮廓线持续轻微抖动",
+    "四肢没有关节，是软管",
+    "只用黑白加一个红"
+  ],
+  "pitfalls": [
+    "画成现代扁平矢量",
+    "加平滑缓动"
+  ],
+  "recommendedMotions": [
+    "pulse-cells",
+    "drag-relink",
+    "geometric-wipe"
+  ]
+}

@@ -1,0 +1,74 @@
+{
+  "slug": "newspaper",
+  "cn": "报纸印刷",
+  "en": "Newspaper Print",
+  "cat": "print",
+  "catCn": "印刷与编辑",
+  "catEn": "Print & Editorial",
+  "signature": "新闻纸黄、黑色油墨、多栏细线与大号头版标题。",
+  "palette": {
+    "bg": "#EFE7D3",
+    "surface": "#F6EFDD",
+    "surface2": "#E0DAC9",
+    "text": "#1C1A17",
+    "dim": "#7B766C",
+    "accent": "#B3261E",
+    "accent2": "#1C1A17",
+    "line": "#35332E",
+    "problem": "#FF5C5C"
+  },
+  "fonts": {
+    "display": "Georgia, 'Songti SC', 'SimSun', serif",
+    "body": "Georgia, 'Songti SC', 'SimSun', serif",
+    "mono": "Inter, 'PingFang SC', 'Microsoft YaHei', sans-serif",
+    "weight": 700,
+    "tracking": "-0.02em"
+  },
+  "stage": {
+    "type": "paper",
+    "typeCn": "纸纤维 + 印刷颗粒",
+    "texture": "油墨不均、栏线、纸张泛黄",
+    "grid": 0,
+    "glow": "#B3261E",
+    "vignette": 0.16
+  },
+  "motion": {
+    "feel": "硬切、标题砸下、栏内文字逐行落",
+    "easing": "ease-out",
+    "spawn": "整块切入 / 分栏展开",
+    "density": "低",
+    "fps": 30
+  },
+  "camera": "锁死整版，偶尔推近一条标题",
+  "goodFor": [
+    "新闻事件",
+    "时间线",
+    "公告",
+    "历史回顾"
+  ],
+  "badFor": [
+    "产品演示",
+    "抽象概念",
+    "科技感"
+  ],
+  "triggers": [
+    "据报道",
+    "当日",
+    "头版",
+    "公告"
+  ],
+  "invariants": [
+    "多栏排版，栏宽一致",
+    "只用黑白加一个红",
+    "日期与版号常驻"
+  ],
+  "pitfalls": [
+    "用纯白背景",
+    "标题用圆润字体"
+  ],
+  "recommendedMotions": [
+    "fore-back-title",
+    "result-hold",
+    "sweep-highlight"
+  ]
+}

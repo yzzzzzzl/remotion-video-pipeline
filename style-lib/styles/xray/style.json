@@ -1,0 +1,74 @@
+{
+  "slug": "xray",
+  "cn": "安检 X 光",
+  "en": "Security X-ray",
+  "cat": "data",
+  "catCn": "数据与图表",
+  "catEn": "Data & Charts",
+  "signature": "深蓝黑底、青白轮廓、物体内部结构以透视线呈现。",
+  "palette": {
+    "bg": "#061423",
+    "surface": "#0E2740",
+    "surface2": "#223B53",
+    "text": "#D6F2FF",
+    "dim": "#788E9C",
+    "accent": "#5CE1FF",
+    "accent2": "#FFB347",
+    "line": "#BDD7E5",
+    "problem": "#FF5C5C"
+  },
+  "fonts": {
+    "display": "Inter, 'PingFang SC', 'Microsoft YaHei', sans-serif",
+    "body": "Inter, 'PingFang SC', 'Microsoft YaHei', sans-serif",
+    "mono": "Consolas, 'JetBrains Mono', 'Courier New', monospace",
+    "weight": 500,
+    "tracking": "0em"
+  },
+  "stage": {
+    "type": "grid",
+    "typeCn": "细网格 + 暗角",
+    "texture": "边缘光、半透明层叠、轻微扫描噪点",
+    "grid": 48,
+    "glow": "#5CE1FF",
+    "vignette": 0.5
+  },
+  "motion": {
+    "feel": "轮廓先亮，内部逐层显影",
+    "easing": "ease-out",
+    "spawn": "数值滚动 / 轴线生长",
+    "density": "中",
+    "fps": 30
+  },
+  "camera": "物品静止，扫描线自上而下经过",
+  "goodFor": [
+    "内部构造",
+    "拆解",
+    "隐藏关系",
+    "排查"
+  ],
+  "badFor": [
+    "情绪渲染",
+    "户外风景",
+    "儿童插画"
+  ],
+  "triggers": [
+    "内部",
+    "透视",
+    "排查",
+    "隐藏"
+  ],
+  "invariants": [
+    "只画轮廓与结构，不画材质颜色",
+    "层次用透明度区分",
+    "危险物用第二强调色且只出现一次"
+  ],
+  "pitfalls": [
+    "画成真实彩色照片",
+    "堆叠过多层导致糊成一团"
+  ],
+  "recommendedMotions": [
+    "context-then-value",
+    "checklist-trend",
+    "flow-dots"
+  ]
+}

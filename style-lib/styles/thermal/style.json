@@ -1,0 +1,74 @@
+{
+  "slug": "thermal",
+  "cn": "热成像",
+  "en": "Thermal Camera",
+  "cat": "data",
+  "catCn": "数据与图表",
+  "catEn": "Data & Charts",
+  "signature": "黑底配彩虹热谱、模糊光斑、温度读数跟随热点。",
+  "palette": {
+    "bg": "#07070B",
+    "surface": "#151426",
+    "surface2": "#2B2A3C",
+    "text": "#F2F0FF",
+    "dim": "#888791",
+    "accent": "#FF5A3C",
+    "accent2": "#3DE1FF",
+    "line": "#D6D4E2",
+    "problem": "#FF5C5C"
+  },
+  "fonts": {
+    "display": "Inter, 'PingFang SC', 'Microsoft YaHei', sans-serif",
+    "body": "Inter, 'PingFang SC', 'Microsoft YaHei', sans-serif",
+    "mono": "Consolas, 'JetBrains Mono', 'Courier New', monospace",
+    "weight": 500,
+    "tracking": "0em"
+  },
+  "stage": {
+    "type": "grid",
+    "typeCn": "细网格 + 暗角",
+    "texture": "高斯模糊光斑、热谱渐变、噪点",
+    "grid": 48,
+    "glow": "#FF5A3C",
+    "vignette": 0.5
+  },
+  "motion": {
+    "feel": "热点缓慢扩散、读数跟着升温",
+    "easing": "ease-out",
+    "spawn": "数值滚动 / 轴线生长",
+    "density": "中",
+    "fps": 30
+  },
+  "camera": "锁死，靠色彩变化推进",
+  "goodFor": [
+    "能耗",
+    "异常检测",
+    "分布差异",
+    "安全"
+  ],
+  "badFor": [
+    "需要精读的文字",
+    "清单",
+    "法律条文"
+  ],
+  "triggers": [
+    "热度",
+    "异常",
+    "分布",
+    "升温"
+  ],
+  "invariants": [
+    "只用热谱色，不混入品牌色",
+    "热点边缘必须柔化",
+    "读数紧贴热点"
+  ],
+  "pitfalls": [
+    "热谱色当装饰铺满全屏",
+    "用硬边矩形表示热区"
+  ],
+  "recommendedMotions": [
+    "context-then-value",
+    "checklist-trend",
+    "flow-dots"
+  ]
+}

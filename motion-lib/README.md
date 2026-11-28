@@ -77,4 +77,6 @@ python scripts/validate.py        # 校验元数据、组件导出、禁用随�
 
 本库是那套口播流水线在**阶段 4 分镜选动作 / 阶段 5 搭画面 / 阶段 6 抽帧质检**的组件与规则来源；也可以脱离流水线单独使用——任何 Remotion 工程拷走 `MotionKit.tsx` 就能用。
 
+**与平级 `../style-lib/`（60 个画风）正交**：画风管「整片长什么样」，本库管「元素怎么动」。一支片选 1 个画风 slug + 每章 1 个主动作；用 `getStyle(slug).palette.accent` 把画风色传给本库组件即可，**不需要修改 `MotionKit.tsx`**。组合规范见 `../references/14-style-library.md`。
+
 当前版本：**v1.0.0**。

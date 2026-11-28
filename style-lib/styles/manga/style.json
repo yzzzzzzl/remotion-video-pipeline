@@ -1,0 +1,74 @@
+{
+  "slug": "manga",
+  "cn": "黑白漫画分格",
+  "en": "Manga Panels",
+  "cat": "cartoon",
+  "catCn": "卡通与动画",
+  "catEn": "Cartoons",
+  "signature": "白底黑线、不规则分格、网点与放射速度线。",
+  "palette": {
+    "bg": "#FFFFFF",
+    "surface": "#F4F4F4",
+    "surface2": "#DDDDDD",
+    "text": "#111111",
+    "dim": "#7C7C7C",
+    "accent": "#D0322C",
+    "accent2": "#111111",
+    "line": "#2E2E2E",
+    "problem": "#FF5C5C"
+  },
+  "fonts": {
+    "display": "'Arial Black', 'Microsoft YaHei', sans-serif",
+    "body": "Inter, 'PingFang SC', 'Microsoft YaHei', sans-serif",
+    "mono": "Inter, 'PingFang SC', 'Microsoft YaHei', sans-serif",
+    "weight": 700,
+    "tracking": "0em"
+  },
+  "stage": {
+    "type": "flat",
+    "typeCn": "纯色平涂 + 硬边几何",
+    "texture": "网点纸、速度线、拟声词、粗黑框",
+    "grid": 0,
+    "glow": "#D0322C",
+    "vignette": 0.16
+  },
+  "motion": {
+    "feel": "分格依次砸入、最后一格停住",
+    "easing": "back(1.6)",
+    "spawn": "弹跳 + 挤压拉伸",
+    "density": "高",
+    "fps": 30
+  },
+  "camera": "锁死整页，视线按格顺序走",
+  "goodFor": [
+    "冲突反转",
+    "故事讲解",
+    "对比",
+    "吐槽"
+  ],
+  "badFor": [
+    "数据报告",
+    "优雅长文",
+    "产品界面"
+  ],
+  "triggers": [
+    "结果",
+    "反转",
+    "突然",
+    "啪"
+  ],
+  "invariants": [
+    "分格大小不等、阅读顺序明确",
+    "只用黑白网点，红色仅一处",
+    "拟声词用粗黑体"
+  ],
+  "pitfalls": [
+    "所有格子等大",
+    "加灰度渐变"
+  ],
+  "recommendedMotions": [
+    "pulse-cells",
+    "drag-relink",
+    "geometric-wipe"
+  ]
+}

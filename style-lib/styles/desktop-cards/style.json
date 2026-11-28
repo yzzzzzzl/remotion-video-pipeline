@@ -1,0 +1,74 @@
+{
+  "slug": "desktop-cards",
+  "cn": "桌面卡片穿梭",
+  "en": "Desktop Cards",
+  "cat": "tech",
+  "catCn": "科技与界面",
+  "catEn": "Tech & Interfaces",
+  "signature": "浅灰白桌面、柔和投影卡片、蓝灰强调，像在操作一个 App。",
+  "palette": {
+    "bg": "#F2F4F8",
+    "surface": "#FFFFFF",
+    "surface2": "#E8E9EB",
+    "text": "#1B2333",
+    "dim": "#7C818C",
+    "accent": "#3B6BFF",
+    "accent2": "#FF8A4C",
+    "line": "#353C4B",
+    "problem": "#FF5C5C"
+  },
+  "fonts": {
+    "display": "Inter, 'PingFang SC', 'Microsoft YaHei', sans-serif",
+    "body": "Inter, 'PingFang SC', 'Microsoft YaHei', sans-serif",
+    "mono": "Consolas, 'JetBrains Mono', 'Courier New', monospace",
+    "weight": 600,
+    "tracking": "-0.03em"
+  },
+  "stage": {
+    "type": "grid",
+    "typeCn": "细网格 + 暗角",
+    "texture": "柔和阴影、1px 浅边、圆角 12px",
+    "grid": 48,
+    "glow": "#3B6BFF",
+    "vignette": 0.5
+  },
+  "motion": {
+    "feel": "卡片滑入 / 叠放 / 轻微缩放，spring 收尾",
+    "easing": "back(1.3)",
+    "spawn": "短促弹入 0.2~0.3s",
+    "density": "低",
+    "fps": 30
+  },
+  "camera": "在卡片间平移穿梭，一次只聚焦一张",
+  "goodFor": [
+    "SaaS 功能",
+    "操作步骤",
+    "后台流程",
+    "清单"
+  ],
+  "badFor": [
+    "史诗叙事",
+    "暗色科幻",
+    "传统题材"
+  ],
+  "triggers": [
+    "打开",
+    "选择",
+    "下一步",
+    "保存"
+  ],
+  "invariants": [
+    "卡片必须有真实投影，不能纯线框",
+    "一次最多两张卡同时在动",
+    "窗口不动，只动卡片"
+  ],
+  "pitfalls": [
+    "卡片堆太多导致重点丢失",
+    "用高饱和撞色破坏克制感"
+  ],
+  "recommendedMotions": [
+    "number-accent",
+    "ui-flow",
+    "typewriter-copy"
+  ]
+}

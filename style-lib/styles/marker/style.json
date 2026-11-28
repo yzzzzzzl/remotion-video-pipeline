@@ -1,0 +1,74 @@
+{
+  "slug": "marker",
+  "cn": "马克笔白纸",
+  "en": "Marker on Paper",
+  "cat": "board",
+  "catCn": "板书与手绘",
+  "catEn": "Board & Hand-drawn",
+  "signature": "纯白纸、粗黑马克笔、荧光高亮块，冲击力靠笔粗。",
+  "palette": {
+    "bg": "#FFFFFF",
+    "surface": "#F7F7F5",
+    "surface2": "#E0E0DE",
+    "text": "#111111",
+    "dim": "#7C7C7C",
+    "accent": "#FFE500",
+    "accent2": "#FF3B6B",
+    "line": "#2E2E2E",
+    "problem": "#FF5C5C"
+  },
+  "fonts": {
+    "display": "'Comic Sans MS', 'Kaiti SC', 'STKaiti', cursive",
+    "body": "'Comic Sans MS', 'Kaiti SC', 'STKaiti', cursive",
+    "mono": "'Comic Sans MS', 'Kaiti SC', 'STKaiti', cursive",
+    "weight": 400,
+    "tracking": "0.01em"
+  },
+  "stage": {
+    "type": "chalk",
+    "typeCn": "粉笔粉尘 + 板面擦痕",
+    "texture": "粗笔触、墨水边缘、荧光色块",
+    "grid": 0,
+    "glow": "#FFE500",
+    "vignette": 0.16
+  },
+  "motion": {
+    "feel": "一笔划出、字随笔画出现",
+    "easing": "ease-in-out",
+    "spawn": "手写逐笔长出",
+    "density": "中",
+    "fps": 30
+  },
+  "camera": "锁死，靠笔触节奏推进",
+  "goodFor": [
+    "口号",
+    "观点输出",
+    "反常识",
+    "短句金句"
+  ],
+  "badFor": [
+    "长文",
+    "数据密集",
+    "细腻情绪"
+  ],
+  "triggers": [
+    "关键",
+    "其实",
+    "不是",
+    "重点"
+  ],
+  "invariants": [
+    "字重必须够粗，细体就失效",
+    "高亮块只盖关键词，不盖整句",
+    "一页不超过两行"
+  ],
+  "pitfalls": [
+    "用细体字配粗笔触",
+    "加投影和渐变"
+  ],
+  "recommendedMotions": [
+    "draw-path",
+    "sweep-highlight",
+    "leader-line"
+  ]
+}

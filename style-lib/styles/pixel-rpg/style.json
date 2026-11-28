@@ -1,0 +1,74 @@
+{
+  "slug": "pixel-rpg",
+  "cn": "16-bit 像素",
+  "en": "16-bit Pixel RPG",
+  "cat": "cartoon",
+  "catCn": "卡通与动画",
+  "catEn": "Cartoons",
+  "signature": "深蓝底、有限色板、硬像素边与格子化 UI。",
+  "palette": {
+    "bg": "#141433",
+    "surface": "#22224F",
+    "surface2": "#37375D",
+    "text": "#F4F0D8",
+    "dim": "#8F8D8E",
+    "accent": "#FFD23F",
+    "accent2": "#4FD1C5",
+    "line": "#D9D6C4",
+    "problem": "#FF5C5C"
+  },
+  "fonts": {
+    "display": "'Arial Black', 'Microsoft YaHei', sans-serif",
+    "body": "Inter, 'PingFang SC', 'Microsoft YaHei', sans-serif",
+    "mono": "Inter, 'PingFang SC', 'Microsoft YaHei', sans-serif",
+    "weight": 700,
+    "tracking": "0em"
+  },
+  "stage": {
+    "type": "flat",
+    "typeCn": "纯色平涂 + 硬边几何",
+    "texture": "无抗锯齿、像素网格、色板限制",
+    "grid": 0,
+    "glow": "#FFD23F",
+    "vignette": 0.16
+  },
+  "motion": {
+    "feel": "逐格跳变、无缓动、按帧步进",
+    "easing": "back(1.6)",
+    "spawn": "弹跳 + 挤压拉伸",
+    "density": "高",
+    "fps": 30
+  },
+  "camera": "锁死，画面整体平移一格",
+  "goodFor": [
+    "游戏化教学",
+    "进度关卡",
+    "清单",
+    "成就"
+  ],
+  "badFor": [
+    "细腻情绪",
+    "真实人物",
+    "印刷质感"
+  ],
+  "triggers": [
+    "关卡",
+    "升级",
+    "收集",
+    "进度"
+  ],
+  "invariants": [
+    "禁止抗锯齿与渐变",
+    "所有元素对齐像素格",
+    "色板不超过 16 色"
+  ],
+  "pitfalls": [
+    "用矢量平滑曲线",
+    "加阴影模糊"
+  ],
+  "recommendedMotions": [
+    "pulse-cells",
+    "drag-relink",
+    "geometric-wipe"
+  ]
+}

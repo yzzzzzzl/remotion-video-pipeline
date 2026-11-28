@@ -1,0 +1,74 @@
+{
+  "slug": "watercolor",
+  "cn": "水彩笔刷",
+  "en": "Watercolor Brush",
+  "cat": "paint",
+  "catCn": "绘画笔触",
+  "catEn": "Painting",
+  "signature": "纸白、透明水色叠压、湿边与颜色自然扩散。",
+  "palette": {
+    "bg": "#FCF8EE",
+    "surface": "#FFFDF6",
+    "surface2": "#EBE9E2",
+    "text": "#3A3630",
+    "dim": "#918D86",
+    "accent": "#5B8FC9",
+    "accent2": "#E0916F",
+    "line": "#514D47",
+    "problem": "#FF5C5C"
+  },
+  "fonts": {
+    "display": "'Comic Sans MS', 'Kaiti SC', 'STKaiti', cursive",
+    "body": "Inter, 'PingFang SC', 'Microsoft YaHei', sans-serif",
+    "mono": "Inter, 'PingFang SC', 'Microsoft YaHei', sans-serif",
+    "weight": 400,
+    "tracking": "0.01em"
+  },
+  "stage": {
+    "type": "stroke",
+    "typeCn": "笔触纹理 + 湿边",
+    "texture": "水痕、湿边、颜料颗粒、纸纹",
+    "grid": 0,
+    "glow": "#5B8FC9",
+    "vignette": 0.16
+  },
+  "motion": {
+    "feel": "颜色慢慢洇开，边缘不规则",
+    "easing": "ease-in-out",
+    "spawn": "笔触晕开 / 层层叠加",
+    "density": "低",
+    "fps": 30
+  },
+  "camera": "锁死，靠晕染推进",
+  "goodFor": [
+    "故事",
+    "旅行",
+    "情绪",
+    "轻科普"
+  ],
+  "badFor": [
+    "精确数据",
+    "界面",
+    "硬核科技"
+  ],
+  "triggers": [
+    "慢慢",
+    "晕开",
+    "柔软",
+    "回忆"
+  ],
+  "invariants": [
+    "色块半透明且可叠压",
+    "边缘必须不规则",
+    "不用纯黑，用深褐"
+  ],
+  "pitfalls": [
+    "用硬边矢量色块",
+    "加高饱和荧光色"
+  ],
+  "recommendedMotions": [
+    "holo-reveal",
+    "slow-push",
+    "image-relay"
+  ]
+}

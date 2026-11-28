@@ -1,0 +1,74 @@
+{
+  "slug": "midcentury",
+  "cn": "50s 扁平卡通",
+  "en": "Mid-century Cartoon",
+  "cat": "cartoon",
+  "catCn": "卡通与动画",
+  "catEn": "Cartoons",
+  "signature": "米黄底、橙青撞色、几何化形体与星芒点缀。",
+  "palette": {
+    "bg": "#F3E7CE",
+    "surface": "#FBF3E0",
+    "surface2": "#E6DFCE",
+    "text": "#2A2A28",
+    "dim": "#847F73",
+    "accent": "#E8763A",
+    "accent2": "#3E9AA6",
+    "line": "#42413C",
+    "problem": "#FF5C5C"
+  },
+  "fonts": {
+    "display": "'Arial Black', 'Microsoft YaHei', sans-serif",
+    "body": "Inter, 'PingFang SC', 'Microsoft YaHei', sans-serif",
+    "mono": "Inter, 'PingFang SC', 'Microsoft YaHei', sans-serif",
+    "weight": 700,
+    "tracking": "0em"
+  },
+  "stage": {
+    "type": "flat",
+    "typeCn": "纯色平涂 + 硬边几何",
+    "texture": "轻微纸纹、几何星芒、粗描边",
+    "grid": 0,
+    "glow": "#E8763A",
+    "vignette": 0.16
+  },
+  "motion": {
+    "feel": "形状滑动拼接、带一点回弹",
+    "easing": "back(1.6)",
+    "spawn": "弹跳 + 挤压拉伸",
+    "density": "高",
+    "fps": 30
+  },
+  "camera": "锁死，靠图形位移",
+  "goodFor": [
+    "生活常识",
+    "复古科普",
+    "食品",
+    "家庭"
+  ],
+  "badFor": [
+    "硬核科技",
+    "金融",
+    "暗色悬疑"
+  ],
+  "triggers": [
+    "那时候",
+    "简单",
+    "三步",
+    "家常"
+  ],
+  "invariants": [
+    "所有形体由圆与三角构成",
+    "配色不超过三色",
+    "加一点星芒做年代感"
+  ],
+  "pitfalls": [
+    "用写实细节",
+    "用超过三种颜色"
+  ],
+  "recommendedMotions": [
+    "pulse-cells",
+    "drag-relink",
+    "geometric-wipe"
+  ]
+}

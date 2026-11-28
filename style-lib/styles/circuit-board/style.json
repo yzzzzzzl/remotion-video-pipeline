@@ -1,0 +1,74 @@
+{
+  "slug": "circuit-board",
+  "cn": "电路板",
+  "en": "Circuit Board",
+  "cat": "light",
+  "catCn": "光与线",
+  "catEn": "Light & Lines",
+  "signature": "深绿板、金色走线、焊盘与信号光点沿路径流动。",
+  "palette": {
+    "bg": "#08281B",
+    "surface": "#0E3A26",
+    "surface2": "#234D39",
+    "text": "#DFF6E6",
+    "dim": "#7E998B",
+    "accent": "#E8B84B",
+    "accent2": "#54E39B",
+    "line": "#C5DDCE",
+    "problem": "#FF5C5C"
+  },
+  "fonts": {
+    "display": "Inter, 'PingFang SC', 'Microsoft YaHei', sans-serif",
+    "body": "Inter, 'PingFang SC', 'Microsoft YaHei', sans-serif",
+    "mono": "Consolas, 'JetBrains Mono', 'Courier New', monospace",
+    "weight": 500,
+    "tracking": "0.02em"
+  },
+  "stage": {
+    "type": "glow",
+    "typeCn": "光晕描边 + 呼吸辉光",
+    "texture": "走线、焊盘圆点、阻焊层光泽",
+    "grid": 0,
+    "glow": "#E8B84B",
+    "vignette": 0.5
+  },
+  "motion": {
+    "feel": "光点沿走线流动、节点依次接通",
+    "easing": "ease-out",
+    "spawn": "光线扫过 / 逐点点亮",
+    "density": "中",
+    "fps": 30
+  },
+  "camera": "锁死俯视，沿走线平移",
+  "goodFor": [
+    "系统连接",
+    "信号流程",
+    "兼容性",
+    "生态"
+  ],
+  "badFor": [
+    "抒情",
+    "人文",
+    "手写"
+  ],
+  "triggers": [
+    "连接",
+    "接通",
+    "路径",
+    "节点"
+  ],
+  "invariants": [
+    "走线只走直角与 45 度",
+    "金线不交叉重叠",
+    "节点亮起要有先后"
+  ],
+  "pitfalls": [
+    "用曲线走线",
+    "所有节点同时亮"
+  ],
+  "recommendedMotions": [
+    "flow-dots",
+    "equalizer-bars",
+    "node-connect"
+  ]
+}

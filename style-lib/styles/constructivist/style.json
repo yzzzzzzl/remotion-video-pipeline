@@ -1,0 +1,74 @@
+{
+  "slug": "constructivist",
+  "cn": "构成主义蒙太奇",
+  "en": "Constructivist Montage",
+  "cat": "geometry",
+  "catCn": "几何与构成",
+  "catEn": "Geometry",
+  "signature": "红黑白、大斜切、粗体标语与照片式硬拼贴。",
+  "palette": {
+    "bg": "#EDE7DC",
+    "surface": "#F7F2E8",
+    "surface2": "#E0DCD2",
+    "text": "#111111",
+    "dim": "#74716C",
+    "accent": "#D5251D",
+    "accent2": "#111111",
+    "line": "#2B2B29",
+    "problem": "#FF5C5C"
+  },
+  "fonts": {
+    "display": "'Arial Black', 'Microsoft YaHei', sans-serif",
+    "body": "Inter, 'PingFang SC', 'Microsoft YaHei', sans-serif",
+    "mono": "Inter, 'PingFang SC', 'Microsoft YaHei', sans-serif",
+    "weight": 700,
+    "tracking": "-0.04em"
+  },
+  "stage": {
+    "type": "flat",
+    "typeCn": "纯色平涂 + 硬边几何",
+    "texture": "硬边拼贴、斜切、粗网点",
+    "grid": 0,
+    "glow": "#D5251D",
+    "vignette": 0.16
+  },
+  "motion": {
+    "feel": "斜切硬切，块面撞进来",
+    "easing": "ease-out",
+    "spawn": "几何块滑动拼接",
+    "density": "中",
+    "fps": 30
+  },
+  "camera": "锁死，靠切块推进",
+  "goodFor": [
+    "观点宣言",
+    "社会议题",
+    "动员",
+    "历史"
+  ],
+  "badFor": [
+    "温情",
+    "儿童",
+    "产品界面"
+  ],
+  "triggers": [
+    "必须",
+    "起来",
+    "打破",
+    "标语"
+  ],
+  "invariants": [
+    "必有 20 度以上的斜切",
+    "红黑白三色为主",
+    "标语用超粗体"
+  ],
+  "pitfalls": [
+    "用圆角与柔和过渡",
+    "加渐变"
+  ],
+  "recommendedMotions": [
+    "pulse-cells",
+    "dual-merge",
+    "result-hold"
+  ]
+}
